@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <header className="masthead">
+      <header className="masthead" id="page-top">
         <div className="container">
           <div className="masthead-subheading">Je Suis Santatra Michado</div>
           <div className="masthead-heading text-uppercase">
