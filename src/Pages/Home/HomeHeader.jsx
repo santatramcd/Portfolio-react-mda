@@ -7,7 +7,7 @@ export default function About() {
         <div className="container">
           <div className="masthead-subheading">Je Suis Santatra Michado</div>
           <div className="masthead-heading text-uppercase">
-            Développeur Web
+            Web Developer
           </div>
           {/* Remplacez "cv-santatra.pdf" par le nom de votre fichier */}
           <a
