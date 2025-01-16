@@ -53,7 +53,7 @@ export default function About() {
               </div>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h4>March 2024</h4>
+                  <h4>May 2024</h4>
                   <h4 className="subheading">Mada Digital agency</h4>
                 </div>
                 <div className="timeline-body">
@@ -77,7 +77,7 @@ export default function About() {
               </div>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h4>December 2022</h4>
+                  <h4>March 2024</h4>
                   <h4 className="subheading">Freelance</h4>
                 </div>
                 <div className="timeline-body">
