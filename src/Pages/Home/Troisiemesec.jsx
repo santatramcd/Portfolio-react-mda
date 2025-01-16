@@ -2,18 +2,17 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function About() {
-  // États pour les données, le chargement, et les erreurs
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null); // État pour gérer l'élément sélectionné
 
-  // Configuration Airtable
-  const baseID = "appTVkIAf30WtN760"; // Remplacez par votre ID de base
-  const tableName = "Work"; // Remplacez par le nom exact de votre table
-  const apiKey = "patGxW0NlAoR2aJ7I.31bf9f568319b4dc29a7fce42c88ed697ead7a4746bcadb9ea8003fbb5c45502"; // Remplacez par votre clé API
+  const baseID = "appTVkIAf30WtN760";
+  const tableName = "Work";
+  const apiKey =
+    "patGxW0NlAoR2aJ7I.31bf9f568319b4dc29a7fce42c88ed697ead7a4746bcadb9ea8003fbb5c45502";
   const airtableURL = `https://api.airtable.com/v0/${baseID}/${tableName}`;
 
-  // Fonction pour récupérer les données
   const fetchAirtableData = async () => {
     setLoading(true);
     try {
@@ -25,10 +24,10 @@ export default function About() {
 
       const formattedData = response.data.records.map((record) => ({
         id: record.id,
-        title: record.fields.Name || "Sans titre", // Nom de l'élément
-        techno: record.fields.Technology || "Sans description", // Description (optionnelle)
-        img: record.fields.Photos?.[0]?.url || "", // URL de l'image
-        link: record.fields.Link || "#", // Lien associé
+        title: record.fields.Name || "Sans titre",
+        techno: record.fields.Technology || "Sans description",
+        img: record.fields.Photos?.[0]?.url || "",
+        link: record.fields.Link || "#",
       }));
 
       setData(formattedData);
@@ -40,7 +39,6 @@ export default function About() {
     }
   };
 
-  // Charger les données au montage du composant
   useEffect(() => {
     fetchAirtableData();
   }, []);
@@ -56,25 +54,38 @@ export default function About() {
             </h3>
           </div>
 
-          {/* Indicateur de chargement ou message d'erreur */}
-          {loading && <p>Chargement des données...</p>}
+          {loading && (
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          )}
           {error && <p>{error}</p>}
 
-          {/* Grille de contenu */}
           {!loading && !error && (
             <div className="row">
               {data.map((item) => (
                 <div key={item.id} className="col-lg-4 col-sm-6 mb-4">
                   <div className="portfolio-item">
-                    <a
-                      className="portfolio-link"
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a className="portfolio-link" href="#">
                       <div className="portfolio-hover">
                         <div className="portfolio-hover-content">
-                          <i className="bi bi-plus fa-3x"></i>
+                          <a
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                            onClick={() => setSelectedItem(item)} // Définit l'élément sélectionné
+                          >
+                            <i className="bi bi-plus fa-3x"></i>
+                          </a>
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="bi bi-link-45deg fa-2x"></i>
+                          </a>
                         </div>
                       </div>
                       <img
@@ -84,7 +95,9 @@ export default function About() {
                       />
                     </a>
                     <div className="portfolio-caption">
-                      <div className="portfolio-caption-heading">{item.title}</div>
+                      <div className="portfolio-caption-heading">
+                        {item.title}
+                      </div>
                       <div className="portfolio-caption-subheading text-muted">
                         {item.techno}
                       </div>
@@ -96,6 +109,53 @@ export default function About() {
           )}
         </div>
       </section>
+
+      {/* Modal */}
+      <div
+        className="modal fade"
+        id="exampleModal"
+        tabIndex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-fullscreen">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+                {selectedItem?.title || "Détails"}
+              </h5>
+              <a
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <i class="bi bi-x-lg"></i>
+              </a>
+            </div>
+            <div className="modal-body">
+              {selectedItem && (
+                <div>
+                  <img
+                    className="img-fluid"
+                    src={selectedItem.img}
+                    alt={selectedItem.title}
+                  />
+                  <p className="mt-3">{selectedItem.techno}</p>
+                  <a
+                    href={selectedItem.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                  >
+                    Voir le projet
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

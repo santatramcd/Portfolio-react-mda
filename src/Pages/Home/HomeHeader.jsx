@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -8,10 +7,15 @@ export default function About() {
         <div className="container">
           <div className="masthead-subheading">Je Suis Santatra Michado</div>
           <div className="masthead-heading text-uppercase">
-          Développeur Web
+            Développeur Web
           </div>
-          <a className="btn btn-primary btn-xl text-uppercase" href="#services">
-          En savoir plus
+          {/* Remplacez "cv-santatra.pdf" par le nom de votre fichier */}
+          <a
+            className="btn btn-primary btn-xl text-uppercase"
+            href="/cv-santatra.pdf"
+            download="Santatra-Michado-CV.pdf"
+          >
+            Télécharger CV
           </a>
         </div>
       </header>
