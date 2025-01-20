@@ -154,4 +154,10 @@ a {
 .card-logos a img{
   width: 150px;
   height: auto;
+  opacity: .5;
+  filter: grayscale(100%);
+}
+.card-logos a img:hover{
+  opacity: 1;
+  filter: none;
 }
