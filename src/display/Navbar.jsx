@@ -48,7 +48,7 @@ export default function Navbar() {
             aria-label="Toggle navigation"
             onClick={toggleMenu}
           >
-           {isMenuVisible ? <i className="bi bi-x-lg"></i> : <i className="bi bi-list"></i>}
+           {isMenuVisible ? <i class="bi bi-x"></i> : <i className="bi bi-list"></i>}
           </button>
           <div
             className={`collapse navbar-collapse ${
