@@ -58,12 +58,14 @@ a {
   font-size: 2.2rem !important;
   color: #fff;
 }
-.fa-2x{
+
+.fa-2x {
   font-size: 1.5rem;
   position: relative;
-  top: -2px!important;
+  top: -2px !important;
   color: #fff;
 }
+
 .img-portfolio {
   transition: .3s;
   width: 100%;
@@ -74,19 +76,26 @@ a {
   margin: 0;
   height: 222px;
 }
-.modal-fullscreen .modal-body{
-  overflow-y: auto; /* Permet le défilement */
-  scrollbar-width: thin; /* Réduit la largeur de la barre pour Firefox */
-  scrollbar-color: transparent transparent; /* Couleur de la barre et du fond pour Firefox */
+
+.modal-fullscreen .modal-body {
+  overflow-y: auto;
+  /* Permet le défilement */
+  scrollbar-width: thin;
+  /* Réduit la largeur de la barre pour Firefox */
+  scrollbar-color: transparent transparent;
+  /* Couleur de la barre et du fond pour Firefox */
 }
-.modal-content{
+
+.modal-content {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
+
 .bi-x-lg,
-.btn-close{
+.btn-close {
   color: #fff;
 }
+
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
@@ -99,39 +108,42 @@ a {
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   font-family: "Raleway", sans-serif;
-  color: #6c757d ;
+  color: #6c757d;
 }
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
+
 .portfolio-filters li.active {
   background-color: rgb(255 200 0);
   color: white;
   border-color: rgb(255 200 0);
 }
+
 /* fadeInUp */
 @keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0)
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1
   }
 }
 
 @-webkit-keyframes fadeInUp {
   from {
-      transform: translate3d(0,40px,0)
+    transform: translate3d(0, 40px, 0)
   }
 
   to {
-      transform: translate3d(0,0,0);
-      opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1
   }
 }
 
@@ -151,13 +163,18 @@ a {
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
-.card-logos a img{
+
+.card-logos a img {
   width: 150px;
   height: auto;
   opacity: .5;
   filter: grayscale(100%);
 }
-.card-logos a img:hover{
+
+.card-logos a img:hover {
   opacity: 1;
   filter: none;
+}
+#portfolio .portfolio-item{
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
