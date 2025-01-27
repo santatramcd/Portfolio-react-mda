@@ -9,6 +9,110 @@ body {
 
 }
 
+/* dark mode */
+body.dark-mode {
+  background-color: #212529;
+  /* Couleur de fond sombre */
+  color: #f8f9fa;
+  /* Couleur de texte claire */
+}
+
+.btn-dark-moon {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  background: #ccc;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+}
+
+.bi-brightness-low {
+  font-size: 1.8rem;
+  position: absolute;
+  top: -5px;
+  left: 3px;
+}
+
+.bi-moon-stars {
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: var(--bs-warning);
+  /* Utilise la variable pour la couleur de fond */
+  color: white;
+  border: none;
+  /* Ajustez la couleur du texte si nécessaire */
+}
+
+.btn:hover {
+  border-color: transparent !important;
+  background-color: var(--bs-warning) !important;
+}
+
+.nav-link {
+  color: var(--bs-warning);
+  /* Utilise la variable pour la couleur des liens */
+}
+
+.bg-btn,
+.bg-0048d5,
+.bg-ffc800,
+.bg-f43731 {
+  width: 20px;
+  height: 20px;
+  background: #f43731;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.bg-0048d5 {
+  background: #0048d5;
+}
+
+.bg-ffc800 {
+  background: #ffc800;
+}
+
+.span-card {
+  border: 1px solid #ccc;
+  padding: 1.6px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.bg-btn {
+  background-color: var(--bs-warning);
+
+}
+
+.dropdown-menu.show {
+  display: flex;
+  width: 50px;
+}
+
+a#dropdownMenuLink:hover,
+a#dropdownMenuLink {
+  color: transparent;
+  background: transparent;
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+  width: 100px;
+
+}
+
+.dropdown {
+  padding: 9px 0px 0px 20px;
+
+}
+
+/* Autres styles nécessaires */
+
+/* fin dark mode */
 a {
   text-decoration: none;
   color: #333;
@@ -43,7 +147,8 @@ a {
 
 .iconne-span-cercle {
   display: inline-block;
-  background-color: rgb(255 200 0);
+  /* background-color: rgb(255 200 0); */
+  background-color: var(--bs-warning);
   border-radius: 50%;
   height: 112px;
   width: 112px;
@@ -119,9 +224,10 @@ a {
 }
 
 .portfolio-filters li.active {
-  background-color: rgb(255 200 0);
+  background-color: var(--bs-warning);
+
   color: white;
-  border-color: rgb(255 200 0);
+  border-color: var(--bs-warning);
 }
 
 /* fadeInUp */
@@ -187,4 +293,44 @@ a {
 .navbar-toggler i {
   font-size: 1.5rem;
   color: #ccc;
+}
+
+.list-mob-moon {
+  display: none;
+}
+
+.list-mob-bg {
+  display: none;
+}
+
+@media (max-width: 996px) {
+  .list-pc-moon {
+    display: none;
+  }
+
+  .list-mob-moon {
+    display: flex;
+  }
+
+  .list-mob-bg {
+    display: flex;
+  }
+
+  .list-pc-bg {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .list-mob-bg,
+  .list-mob-moon {
+    position: absolute;
+    right: 68px;
+    top: 24px;
+  }
+
+  .list-mob-bg {
+    right: 120px;
+  }
 }

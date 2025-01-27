@@ -4,9 +4,20 @@ import Mda from "../assets/MDA.png";
 
 export default function Navbar() {
   const [isMenuVisible, setMenuVisible] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(false); // État pour le mode sombre
 
   const toggleMenu = () => {
     setMenuVisible(!isMenuVisible);
+  };
+
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkMode);
+    document.body.classList.toggle("dark-mode", !isDarkMode); // Ajoute ou enlève la classe dark-mode
+  };
+
+  const changeColor = (color) => {
+    document.documentElement.style.setProperty("--bs-warning", color); // Change la couleur de la variable CSS
+    document.documentElement.style.setProperty("--bs-primary", color); // Change la couleur de la variable CSS si nécessaire
   };
 
   useEffect(() => {
@@ -21,23 +32,78 @@ export default function Navbar() {
       }
     };
 
-    // Add event listeners
     window.addEventListener("scroll", navbarShrink);
     navbarShrink();
 
     return () => {
-      // Clean up event listeners on unmount
       window.removeEventListener("scroll", navbarShrink);
     };
   }, []);
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <nav
+        className="navbar navbar-expand-lg navbar-dark fixed-top"
+        id="mainNav"
+      >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
             <img src={Mda} alt="Logo Mada Digital Agency" />
           </a>
+          <li className="list-mob-bg">
+            <div className="dropdown">
+              <a
+                className="btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span className="span-card">
+                  <span className="bg-btn"></span>
+                </span>
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => changeColor("#f43731")}
+                  >
+                    <span className="bg-f43731"></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => changeColor("#0048d5")}
+                  >
+                    <span className="bg-0048d5"></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => changeColor("#ffc800")}
+                  >
+                    <span className="bg-ffc800"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className="list-mob-moon">
+            <button className="btn-dark-moon" onClick={toggleDarkMode}>
+              {isDarkMode ? (
+                <i className="bi bi-brightness-low"></i>
+              ) : (
+                <i className="bi bi-moon-stars"></i>
+              )}
+            </button>
+          </li>
           <button
             className="navbar-toggler"
             type="button"
@@ -48,7 +114,11 @@ export default function Navbar() {
             aria-label="Toggle navigation"
             onClick={toggleMenu}
           >
-           {isMenuVisible ? <i class="bi bi-x"></i> : <i className="bi bi-list"></i>}
+            {isMenuVisible ? (
+              <i className="bi bi-x"></i>
+            ) : (
+              <i className="bi bi-list"></i>
+            )}
           </button>
           <div
             className={`collapse navbar-collapse ${
@@ -70,6 +140,63 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
+              <li className="list-pc-moon">
+                <button className="btn-dark-moon" onClick={toggleDarkMode}>
+                  {isDarkMode ? (
+                    <i className="bi bi-brightness-low"></i>
+                  ) : (
+                    <i className="bi bi-moon-stars"></i>
+                  )}
+                </button>
+              </li>
+              <li className="list-pc-bg">
+                <div className="dropdown">
+                  <a
+                    className="btn-secondary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span className="span-card">
+                      <span className="bg-btn"></span>
+                    </span>
+                  </a>
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        onClick={() => changeColor("#f43731")}
+                      >
+                        <span className="bg-f43731"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        onClick={() => changeColor("#0048d5")}
+                      >
+                        <span className="bg-0048d5"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="dropdown-item"
+                        href="#"
+                        onClick={() => changeColor("#ffc800")}
+                      >
+                        <span className="bg-ffc800"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </div>

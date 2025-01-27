@@ -57,7 +57,7 @@ export default function Home() {
     <>
       <div>
         <section id="portfolio" className="portfolio section page-section">
-          <div className="container" data-aos="fade-up">
+          <div className="container">
             <div className="text-center">
               <h2 className="section-heading text-uppercase">Portfolio</h2>
               <h3 className="section-subheading text-muted">
@@ -75,8 +75,6 @@ export default function Home() {
             >
               <ul
                 className="portfolio-filters isotope-filters"
-                data-aos="fade-up"
-                data-aos-delay="100"
               >
                 <li
                   className={` ${filter === "*" ? "active" : ""}`}
@@ -130,8 +128,6 @@ export default function Home() {
                     <div
                       key={item.id}
                       className="col-lg-4 col-sm-6 mb-4"
-                      data-aos="fade-up"
-                      data-aos-delay="200"
                     >
                       <div className="portfolio-item">
                         <a className="portfolio-link" href="#">
