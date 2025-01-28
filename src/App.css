@@ -312,8 +312,8 @@ a {
 /* text turn */
 .circle {
   position: relative;
-  width: 360px;
-  height: 360px;
+  width: 380px;
+  height: 380px;
   /* background: red; */
   border-radius: 50%;
   display: flex;
@@ -326,8 +326,9 @@ a {
   height: 100%;
   position: absolute;
   animation: anim 10s linear infinite;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 100%;
+  text-transform: uppercase;
 }
 
 @keyframes anim {
@@ -344,7 +345,7 @@ a {
   position: absolute;
   left: 50%;
   font-size: 1.2em;
-  transform-origin: 0 185px;
+  transform-origin: 0 190px;
 }
 
 img.im-banners {
