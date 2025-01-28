@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Mda from "../assets/MDA.png";
+import Mda from "../assets/logos/mda.png";
 
 export default function Navbar() {
   const [isMenuVisible, setMenuVisible] = useState(false);

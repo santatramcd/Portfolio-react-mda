@@ -1,20 +1,58 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function About() {
+  const [rotatedText, setRotatedText] = useState("");
+
+  useEffect(() => {
+    const text = "Santatra Michado - Creative UX / UI Design";
+    const transformedText = text
+      .split("")
+      .map(
+        (char, i) =>
+          `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+      )
+      .join("");
+
+    setRotatedText(transformedText);
+  }, []);
   return (
     <div>
       <header className="masthead " id="page-top">
         <div className="container">
-          <div className="masthead-subheading">Je Suis Santatra Michado</div>
-          <div className="masthead-heading text-uppercase">Web Developer</div>
-          {/* Remplacez "cv-santatra.pdf" par le nom de votre fichier */}
-          <a
-            className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp  fadeInUp"
-            href="/cv-santatra.pdf"
-            download="Santatra-Michado-CV.pdf"
-          >
-            Télécharger CV
-          </a>
+          <div className="row row-bann">
+            <div className="col-lg-6">
+              <div className="masthead-subheading">
+                Je Suis Santatra Michado
+              </div>
+              <div className="masthead-heading text-uppercase">
+                Développeur Web
+              </div>
+              <a
+                className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp  fadeInUp"
+                href="/cv-santatra.pdf"
+                download="Santatra-Michado-CV.pdf"
+              >
+                Télécharger CV
+              </a>
+            </div>
+            <div className="col-lg-6">
+              <div className="div-cont-bann">
+                <div className="circle">
+                  <div
+                    className="text"
+                    dangerouslySetInnerHTML={{ __html: rotatedText }}
+                  />
+                  <div className="div-banners">
+                    <img
+                      src="https://santatra-michado.vercel.app/assets/banni%C3%A8re-wGy1AY9V.jpg"
+                      alt="image"
+                      className="im-banners"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
     </div>

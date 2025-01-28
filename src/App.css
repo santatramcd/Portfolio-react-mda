@@ -52,8 +52,7 @@ body.dark-mode {
 }
 
 .nav-link {
-  color: var(--bs-warning);
-  /* Utilise la variable pour la couleur des liens */
+  color: #6c757d;
 }
 
 .bg-btn,
@@ -303,6 +302,59 @@ a {
   display: none;
 }
 
+/* text turn */
+.circle {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  /* background: red; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 10s linear infinite;
+  font-weight: 600;
+  border-radius: 100%;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 185px;
+}
+
+img.im-banners {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.div-cont-bann {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
 @media (max-width: 996px) {
   .list-pc-moon {
     display: none;
@@ -318,6 +370,17 @@ a {
 
   .list-pc-bg {
     display: none;
+  }
+
+  .div-cont-bann {
+    margin-bottom: 50px;
+  }
+
+  .row-bann {
+    flex-direction: column-reverse;
+  }
+  header.masthead{
+    text-align: center;
   }
 }
 
