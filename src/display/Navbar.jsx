@@ -132,6 +132,7 @@ export default function Navbar() {
                 { href: "#portfolio", label: "Portfolio" },
                 { href: "#about", label: "About" },
                 { href: "#team", label: "Team" },
+                { href: "#Skills", label: "Skills" },
                 { href: "#contact", label: "Contact" },
               ].map((item, index) => (
                 <li className="nav-item" key={index}>

@@ -6,6 +6,7 @@ import Troisiemesec from "./Home/Troisiemesec";
 import Quatriemesec from "./Home/quatriemesec";
 import Cinqsec from "./Home/cinqsec";
 import Sixsec from "./Home/Sixsec";
+import Skills from "./Home/skills";
 import Septsec from "./Home/Septsec";
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <Troisiemesec />
           <Quatriemesec />
           <Cinqsec />
+          <Skills/>
           <Sixsec />
           <Septsec />
         </div>
