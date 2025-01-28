@@ -157,7 +157,7 @@ export default function Home() {
                           />
                         </a>
                         <div className="portfolio-caption">
-                          <div className="portfolio-caption-heading text-dark">
+                          <div className="portfolio-caption-heading">
                             {item.title}
                           </div>
                           <div className="portfolio-caption-subheading text-muted">
