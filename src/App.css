@@ -416,4 +416,15 @@ img.im-banners {
   .dropdown {
     padding: 6px 0px 0px 20px;
   }
+  .circle {
+    width: 350px;
+    height: 350px;
+  }
+  img.im-banners {
+    width: 280px;
+    height: 280px;
+  }
+  .text span {
+    transform-origin: 0 175px;
+  }
 }
