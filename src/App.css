@@ -33,7 +33,7 @@ body.dark-mode {
 
 .bi-brightness-low {
   font-size: 1.5rem;
-  color: var(--bs-warning);
+  color: #fff;
 }
 
 .bi-moon-stars {
