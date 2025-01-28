@@ -25,17 +25,20 @@ body.dark-mode {
   border: none;
   border-radius: 50%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .bi-brightness-low {
-  font-size: 1.8rem;
-  position: absolute;
-  top: -5px;
-  left: 3px;
+  font-size: 1.5rem;
+  color: var(--bs-warning);
 }
 
 .bi-moon-stars {
   font-size: 1.2rem;
+  color: #333;
 }
 
 .btn {
@@ -414,17 +417,21 @@ img.im-banners {
   .list-mob-bg {
     right: 120px;
   }
+
   .dropdown {
     padding: 6px 0px 0px 20px;
   }
+
   .circle {
     width: 350px;
     height: 350px;
   }
+
   img.im-banners {
     width: 280px;
     height: 280px;
   }
+
   .text span {
     transform-origin: 0 175px;
   }
