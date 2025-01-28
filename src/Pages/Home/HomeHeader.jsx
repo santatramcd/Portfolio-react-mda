@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import banniere from "../../assets/bannière.jpg"
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
 
@@ -44,7 +44,7 @@ export default function About() {
                   />
                   <div className="div-banners">
                     <img
-                      src="https://santatra-michado.vercel.app/assets/banni%C3%A8re-wGy1AY9V.jpg"
+                      src={banniere}
                       alt="image"
                       className="im-banners"
                     />

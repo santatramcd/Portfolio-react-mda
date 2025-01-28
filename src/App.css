@@ -105,8 +105,7 @@ a#dropdownMenuLink {
 }
 
 .dropdown {
-  padding: 6px 0px 0px 20px;
-
+  padding: 22px 0px 0px 20px;
 }
 
 /* Autres styles nécessaires */
@@ -302,6 +301,14 @@ a {
   display: none;
 }
 
+.list-mob-bg,
+.list-mob-moon,
+.list-pc-bg,
+.list-pc-moon {
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 /* text turn */
 .circle {
   position: relative;
@@ -355,6 +362,14 @@ img.im-banners {
   overflow: hidden;
 }
 
+/*  */
+#mainNav .navbar-nav .nav-item {
+  display: flex;
+  margin-right: 1rem;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 @media (max-width: 996px) {
   .list-pc-moon {
     display: none;
@@ -378,8 +393,10 @@ img.im-banners {
 
   .row-bann {
     flex-direction: column-reverse;
+    align-content: center;
   }
-  header.masthead{
+
+  header.masthead {
     text-align: center;
   }
 }
@@ -395,5 +412,8 @@ img.im-banners {
 
   .list-mob-bg {
     right: 120px;
+  }
+  .dropdown {
+    padding: 6px 0px 0px 20px;
   }
 }
