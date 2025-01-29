@@ -433,7 +433,12 @@ img.im-banners {
   font-size: 14px;
   opacity: 1; 
 }
-
+/*  */
+.dropdown-menu.show{
+  left: -45px;
+  height: 45px;
+  cursor: pointer;
+}
 @media (max-width: 996px) {
   .list-pc-moon {
     display: none;
