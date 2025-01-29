@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <div>
-      <section className="page-section" id="services">
+      <section className="page-section" id="services" data-aos="fade-up">
         <div className="container">
           <div className="text-center">
             <h2 className="section-heading text-uppercase">Nos Services</h2>

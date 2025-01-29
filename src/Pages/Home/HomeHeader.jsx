@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import banniere from "../../assets/bannière.jpg"
+import banniere from "../../assets/bannière.jpg";
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
 
@@ -19,8 +19,8 @@ export default function About() {
     <div>
       <header className="masthead " id="page-top">
         <div className="container">
-          <div className="row row-bann">
-            <div className="col-lg-6">
+          <div className="row row-bann animated animatedFadeInUp fadeInUp">
+            <div className="col-lg-6" >
               <div className="masthead-subheading">
                 Je Suis Santatra Michado
               </div>
@@ -28,7 +28,7 @@ export default function About() {
                 Développeur Web
               </div>
               <a
-                className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp  fadeInUp"
+                className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"
                 href="/cv-santatra.pdf"
                 download="Santatra-Michado-CV.pdf"
               >
