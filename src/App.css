@@ -383,7 +383,9 @@ img.im-banners {
   margin: 40px 0;
   overflow: hidden;
 }
-
+.timeline-inverted{
+  overflow: hidden;
+}
 .technical-bars .bar:first-child {
   margin-top: 0;
 }

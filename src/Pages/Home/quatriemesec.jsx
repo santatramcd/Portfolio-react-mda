@@ -1,11 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import about1 from "../../assets/about/1.jpg";
 import about2 from "../../assets/about/2.jpg";
 import about3 from "../../assets/about/3.jpg";
 import about4 from "../../assets/about/4.jpg";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 1000,
+    });
+  }, []);
   return (
     <div>
       <section className="page-section" id="about">
@@ -27,7 +34,7 @@ export default function About() {
                   alt="..."
                 />
               </div>
-              <div className="timeline-panel">
+              <div className="timeline-panel" data-aos="fade-right">
                 <div className="timeline-heading">
                   <h4>2023 - à présent</h4>
                   <h4 className="subheading">Maki Services Sarlu</h4>
@@ -51,7 +58,7 @@ export default function About() {
                   alt="..."
                 />
               </div>
-              <div className="timeline-panel">
+              <div className="timeline-panel" data-aos="fade-left">
                 <div className="timeline-heading">
                   <h4>May 2024</h4>
                   <h4 className="subheading">Mada Digital agency</h4>
@@ -75,7 +82,7 @@ export default function About() {
                   alt="..."
                 />
               </div>
-              <div className="timeline-panel">
+              <div className="timeline-panel" data-aos="fade-right">
                 <div className="timeline-heading">
                   <h4>March 2024</h4>
                   <h4 className="subheading">Freelance - Artiist.fr</h4>
@@ -100,7 +107,7 @@ export default function About() {
                   alt="..."
                 />
               </div>
-              <div className="timeline-panel">
+              <div className="timeline-panel" data-aos="fade-left">
                 <div className="timeline-heading">
                   <h4>2021 - 2024</h4>
                   <h4 className="subheading">Université privée hay</h4>

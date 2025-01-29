@@ -12916,7 +12916,8 @@ header.masthead .masthead-heading {
 
 .timeline>li {
   position: relative;
-  min-height: 50px;
+  /* min-height: 50px; */
+  min-height: 85px;
   margin-bottom: 50px;
 }
 
