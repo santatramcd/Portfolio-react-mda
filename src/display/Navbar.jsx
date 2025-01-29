@@ -171,7 +171,6 @@ export default function Navbar() {
                     <li>
                       <a
                         className="dropdown-item"
-                        href="#"
                         onClick={() => changeColor("#f43731")}
                       >
                         <span className="bg-f43731"></span>
@@ -180,7 +179,6 @@ export default function Navbar() {
                     <li>
                       <a
                         className="dropdown-item"
-                        href="#"
                         onClick={() => changeColor("#0048d5")}
                       >
                         <span className="bg-0048d5"></span>
@@ -189,7 +187,6 @@ export default function Navbar() {
                     <li>
                       <a
                         className="dropdown-item"
-                        href="#"
                         onClick={() => changeColor("#ffc800")}
                       >
                         <span className="bg-ffc800"></span>
