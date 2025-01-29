@@ -4,7 +4,7 @@ export default function About() {
   const [rotatedText, setRotatedText] = useState("");
 
   useEffect(() => {
-    const text = "Santatra Michado - Creative UX / UI Design";
+    const text = "Integrateur web- Creative UX / UI Designer";
     const transformedText = text
       .split("")
       .map(
@@ -25,7 +25,7 @@ export default function About() {
                 Je Suis Santatra Michado
               </div>
               <div className="masthead-heading text-uppercase">
-                Développeur Web
+                Développeur <span className="name-sm"> Front-End</span>
               </div>
               <a
                 className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"

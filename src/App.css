@@ -439,6 +439,14 @@ img.im-banners {
   height: 45px;
   cursor: pointer;
 }
+.name-sm{
+  background: linear-gradient(to right, var(--bs-warning), #c16ae3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 @media (max-width: 996px) {
   .list-pc-moon {
     display: none;
