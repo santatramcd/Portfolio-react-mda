@@ -461,6 +461,9 @@ img.im-banners {
   right: 24px;
   top: 25px;
 }
+.dropdown-item:hover{
+  background-color: #fff;
+}
 @media (max-width: 996px) {
   .list-pc-moon {
     display: none;
