@@ -302,7 +302,9 @@ a {
 .list-mob-bg {
   display: none;
 }
-
+.list-pc-moon{
+  display: flex;
+}
 .list-mob-bg,
 .list-mob-moon,
 .list-pc-bg,
@@ -310,6 +312,7 @@ a {
   flex-wrap: wrap;
   align-content: center;
 }
+
 
 /* text turn */
 .circle {
