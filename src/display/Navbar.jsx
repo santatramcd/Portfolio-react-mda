@@ -122,9 +122,11 @@ export default function Navbar() {
             onClick={toggleMenu}
           >
             {isMenuVisible ? (
-              <i className="bi bi-x"></i>
+              // <i className="bi bi-x"></i>
+              <img width="32" height="32" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/50/external-close-web-flaticons-lineal-color-flat-icons-5.png" alt="external-close-web-flaticons-lineal-color-flat-icons-5"/>
             ) : (
-              <i className="bi bi-list"></i>
+              // <i className="bi bi-list"></i>
+              <img width="32" height="32" src="https://img.icons8.com/nolan/50/drag-list-down.png" alt="drag-list-down"/>
             )}
           </button>
           <div
