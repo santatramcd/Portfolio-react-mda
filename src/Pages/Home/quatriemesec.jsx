@@ -84,7 +84,7 @@ export default function About() {
               </div>
               <div className="timeline-panel" data-aos="fade-right">
                 <div className="timeline-heading">
-                  <h4>March 2024</h4>
+                  <h4>Mars 2024</h4>
                   <h4 className="subheading">Freelance - Artiist.fr</h4>
                 </div>
                 <div className="timeline-body">
