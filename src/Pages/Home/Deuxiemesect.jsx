@@ -17,7 +17,8 @@ export default function About() {
             <div className="col-md-4">
               <span className="fa-stack fa-4x">
                 <span className="iconne-span-cercle">
-                  <i className="bi bi-cart-check-fill fa-stack-1x fa-inverse"></i>
+                  {/* <i className="bi bi-cart-check-fill fa-stack-1x fa-inverse"></i> */}
+                  <img width="64" height="64" src="https://img.icons8.com/dusk/64/e-commerce.png" alt="e-commerce" className="icn-e-com"/>
                 </span>
               </span>
               <h4 className="my-3">E-Commerce</h4>
@@ -30,7 +31,8 @@ export default function About() {
             <div className="col-md-4">
               <span className="fa-stack fa-4x">
                 <span className="iconne-span-cercle">
-                  <i className="bi bi-laptop fa-stack-1x fa-inverse"></i>
+                  {/* <i className="bi bi-laptop fa-stack-1x fa-inverse"></i> */}
+                  <img width="64" height="64" src="https://img.icons8.com/officel/80/media-queries.png" alt="media-queries" className="icn-resp"/>
                 </span>
               </span>
               <h4 className="my-3">Responsive Design</h4>
@@ -43,7 +45,8 @@ export default function About() {
             <div className="col-md-4">
               <span className="fa-stack fa-4x">
                 <span className="iconne-span-cercle">
-                  <i className="bi bi-lock-fill fa-stack-1x fa-inverse"></i>
+                  {/* <i className="bi bi-lock-fill fa-stack-1x fa-inverse"></i> */}
+                  <img width="64" height="64" src="https://img.icons8.com/officel/80/web-shield.png" alt="web-shield" className="icn-resp"/>
                 </span>
               </span>
               <h4 className="my-3">Sécurité Web</h4>

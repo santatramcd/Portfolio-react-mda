@@ -147,12 +147,12 @@ a {
 
 .iconne-span-cercle {
   display: inline-block;
-  /* background-color: rgb(255 200 0); */
   background-color: var(--bs-warning);
   border-radius: 50%;
   height: 112px;
   width: 112px;
   color: #fff;
+  position: relative;
 }
 
 .iconne-span-cercle i {
@@ -382,9 +382,11 @@ img.im-banners {
   margin: 40px 0;
   overflow: hidden;
 }
-.timeline-inverted{
+
+.timeline-inverted {
   overflow: hidden;
 }
+
 .technical-bars .bar:first-child {
   margin-top: 0;
 }
@@ -399,7 +401,7 @@ img.im-banners {
   border-radius: 10px;
   width: 100%;
   height: 5px;
-  background-color: #000; 
+  background-color: #000;
 }
 
 .technical-bars .bar .progress-line span {
@@ -408,6 +410,7 @@ img.im-banners {
   position: absolute;
   border-radius: 10px;
 }
+
 /* Définir directement la largeur pour chaque compétence */
 .progress-line.html span {
   width: 90%;
@@ -428,17 +431,19 @@ img.im-banners {
 .percentage {
   position: absolute;
   right: 0;
-  top: -25px; 
+  top: -25px;
   font-size: 14px;
-  opacity: 1; 
+  opacity: 1;
 }
+
 /*  */
-.dropdown-menu.show{
+.dropdown-menu.show {
   left: -45px;
   height: 45px;
   cursor: pointer;
 }
-.name-sm{
+
+.name-sm {
   background: linear-gradient(to right, var(--bs-warning), #c16ae3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -446,6 +451,16 @@ img.im-banners {
   color: transparent;
 }
 
+.icn-e-com {
+  position: absolute;
+  right: 24px;
+  top: 20px;
+}
+.icn-resp{
+  position: absolute;
+  right: 24px;
+  top: 25px;
+}
 @media (max-width: 996px) {
   .list-pc-moon {
     display: none;
