@@ -95,9 +95,19 @@ export default function Navbar() {
           <li className="list-mob-moon">
             <button className="btn-dark-moon" onClick={toggleDarkMode}>
               {isDarkMode ? (
-                <i className="bi bi-brightness-low"></i>
+                <img
+                  width="40"
+                  height="40"
+                  src="https://img.icons8.com/emoji/48/sun-with-face.png"
+                  alt="sun-with-face"
+                />
               ) : (
-                <i className="bi bi-moon-stars"></i>
+                <img
+                  width="32"
+                  height="32"
+                  src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/external-moon-bedroom-nawicon-outline-color-nawicon.png"
+                  alt="external-moon-bedroom-nawicon-outline-color-nawicon"
+                />
               )}
             </button>
           </li>
@@ -141,9 +151,19 @@ export default function Navbar() {
               <li className="list-pc-moon">
                 <button className="btn-dark-moon" onClick={toggleDarkMode}>
                   {isDarkMode ? (
-                    <i className="bi bi-brightness-low"></i>
+                    <img
+                      width="40"
+                      height="40"
+                      src="https://img.icons8.com/emoji/48/sun-with-face.png"
+                      alt="sun-with-face"
+                    />
                   ) : (
-                    <i className="bi bi-moon-stars"></i>
+                    <img
+                      width="32"
+                      height="32"
+                      src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/external-moon-bedroom-nawicon-outline-color-nawicon.png"
+                      alt="external-moon-bedroom-nawicon-outline-color-nawicon"
+                    />
                   )}
                 </button>
               </li>

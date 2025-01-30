@@ -20,8 +20,7 @@ body.dark-mode {
 .btn-dark-moon {
   width: 35px;
   height: 35px;
-  color: #fff;
-  background: #ccc;
+  background: transparent;
   border: none;
   border-radius: 50%;
   position: relative;
@@ -31,15 +30,15 @@ body.dark-mode {
   align-content: center;
 }
 
-.bi-brightness-low {
+/* .bi-brightness-low {
   font-size: 1.5rem;
   color: #fff;
-}
+} */
 
-.bi-moon-stars {
+/* .bi-moon-stars {
   font-size: 1.2rem;
   color: #333;
-}
+} */
 
 .btn {
   background-color: var(--bs-warning);
