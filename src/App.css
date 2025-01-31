@@ -18,13 +18,13 @@ body.dark-mode {
  
 }
 body.dark-mode .nav-link {
-  color: #f8f9fa !important;
+  color: #f8f9fa;
 }
 .nav-link {
-  color: #212529 !important;
+  color: #212529;
 }
 #mainNav.navbar-shrink .nav-link{
-  color: #f8f9fa !important;
+  color: #f8f9fa;
 }
 .btn-dark-moon {
   width: 35px;
