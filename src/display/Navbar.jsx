@@ -123,7 +123,7 @@ export default function Navbar() {
           >
             {isMenuVisible ? (
               // <i className="bi bi-x"></i>
-              <img width="32" height="32" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/50/external-close-web-flaticons-lineal-color-flat-icons-5.png" alt="external-close-web-flaticons-lineal-color-flat-icons-5"/>
+              <img width="32" height="32" src="https://img.icons8.com/3d-fluency/94/delete-sign.png" alt="delete-sign"/>
             ) : (
               // <i className="bi bi-list"></i>
               <img width="32" height="32" src="https://img.icons8.com/nolan/50/drag-list-down.png" alt="drag-list-down"/>
