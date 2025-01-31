@@ -4,7 +4,7 @@ export default function About() {
   const [rotatedText, setRotatedText] = useState("");
 
   useEffect(() => {
-    const text = "Integrateur web- Creative UX / UI Designer";
+    const text = "Integrateur web❤️Creative UX / UI Designer";
     const transformedText = text
       .split("")
       .map(

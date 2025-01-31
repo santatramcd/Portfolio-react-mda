@@ -18,21 +18,33 @@ export default function About() {
               <span className="fa-stack fa-4x">
                 <span className="iconne-span-cercle">
                   {/* <i className="bi bi-cart-check-fill fa-stack-1x fa-inverse"></i> */}
-                  <img width="64" height="64" src="https://img.icons8.com/dusk/64/e-commerce.png" alt="e-commerce" className="icn-e-com"/>
+                  {/* <img
+                    width="66"
+                    height="66"
+                    src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/66/external-Code-big-data-and-bi-services-smashingstocks-flat-smashing-stocks.png"
+                    alt="external-Code-big-data-and-bi-services-smashingstocks-flat-smashing-stocks"
+                    className="icn-e-com"
+                  /> */}
+                <img width="66" height="66" src="https://img.icons8.com/external-others-bomsymbols-/91/external-code-flat-02-digital-design-others-bomsymbols-.png" className="icn-e-com" alt="external-code-flat-02-digital-design-others-bomsymbols-"/>
                 </span>
               </span>
-              <h4 className="my-3">E-Commerce</h4>
+              <h4 className="mt-3">Clean Code</h4>
               <p className="text-muted">
-                Développez votre boutique en ligne avec des fonctionnalités
-                modernes pour offrir une expérience d'achat fluide et agréable à
-                vos clients.
+                Un code clair, structuré et facile à comprendre améliore la
+                qualité et la maintenabilité des projets.
               </p>
             </div>
             <div className="col-md-4">
               <span className="fa-stack fa-4x">
                 <span className="iconne-span-cercle">
                   {/* <i className="bi bi-laptop fa-stack-1x fa-inverse"></i> */}
-                  <img width="64" height="64" src="https://img.icons8.com/officel/80/media-queries.png" alt="media-queries" className="icn-resp"/>
+                  <img
+                    width="64"
+                    height="64"
+                    src="https://img.icons8.com/officel/80/media-queries.png"
+                    alt="media-queries"
+                    className="icn-resp"
+                  />
                 </span>
               </span>
               <h4 className="my-3">Responsive Design</h4>
@@ -46,7 +58,13 @@ export default function About() {
               <span className="fa-stack fa-4x">
                 <span className="iconne-span-cercle">
                   {/* <i className="bi bi-lock-fill fa-stack-1x fa-inverse"></i> */}
-                  <img width="64" height="64" src="https://img.icons8.com/officel/80/web-shield.png" alt="web-shield" className="icn-resp"/>
+                  <img
+                    width="64"
+                    height="64"
+                    src="https://img.icons8.com/officel/80/web-shield.png"
+                    alt="web-shield"
+                    className="icn-resp"
+                  />
                 </span>
               </span>
               <h4 className="my-3">Sécurité Web</h4>
