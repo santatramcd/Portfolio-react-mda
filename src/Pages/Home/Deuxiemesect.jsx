@@ -18,20 +18,12 @@ export default function About() {
               <span className="fa-stack fa-4x">
                 <span className="iconne-span-cercle">
                   {/* <i className="bi bi-cart-check-fill fa-stack-1x fa-inverse"></i> */}
-                  {/* <img
-                    width="66"
-                    height="66"
-                    src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/66/external-Code-big-data-and-bi-services-smashingstocks-flat-smashing-stocks.png"
-                    alt="external-Code-big-data-and-bi-services-smashingstocks-flat-smashing-stocks"
-                    className="icn-e-com"
-                  /> */}
                 <img width="66" height="66" src="https://img.icons8.com/external-others-bomsymbols-/91/external-code-flat-02-digital-design-others-bomsymbols-.png" className="icn-e-com" alt="external-code-flat-02-digital-design-others-bomsymbols-"/>
                 </span>
               </span>
-              <h4 className="mt-3">Clean Code</h4>
+              <h4 className="mt-3">Optimisation du Code</h4>
               <p className="text-muted">
-                Un code clair, structuré et facile à comprendre améliore la
-                qualité et la maintenabilité des projets.
+              Améliorez la lisibilité et la maintenabilité de votre code grâce aux meilleures pratiques et à un refactoring efficace
               </p>
             </div>
             <div className="col-md-4">
