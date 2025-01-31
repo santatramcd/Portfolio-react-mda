@@ -12700,7 +12700,7 @@ p {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: var(--bs-warning);
 }
 
 @media (min-width: 992px) {
@@ -12729,7 +12729,7 @@ p {
     padding-bottom: 1rem;
     background-color: #212529;
   }
-
+ 
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }

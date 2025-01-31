@@ -15,8 +15,17 @@ body.dark-mode {
   /* Couleur de fond sombre */
   color: #f8f9fa;
   /* Couleur de texte claire */
+ 
 }
-
+body.dark-mode .nav-link {
+  color: #f8f9fa !important;
+}
+.nav-link {
+  color: #212529 !important;
+}
+#mainNav.navbar-shrink .nav-link{
+  color: #f8f9fa !important;
+}
 .btn-dark-moon {
   width: 35px;
   height: 35px;
@@ -53,9 +62,7 @@ body.dark-mode {
   background-color: var(--bs-warning) !important;
 }
 
-.nav-link {
-  color: #6c757d;
-}
+
 
 .bg-btn,
 .bg-0048d5,
