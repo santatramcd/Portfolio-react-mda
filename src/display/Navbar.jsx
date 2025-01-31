@@ -39,6 +39,7 @@ export default function Navbar() {
       window.removeEventListener("scroll", navbarShrink);
     };
   }, []);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
@@ -121,13 +122,14 @@ export default function Navbar() {
             aria-label="Toggle navigation"
             onClick={toggleMenu}
           >
-            {isMenuVisible ? (
-              // <i className="bi bi-x"></i>
-              <img width="32" height="32" src="https://img.icons8.com/3d-fluency/94/delete-sign.png" alt="delete-sign"/>
-            ) : (
-              // <i className="bi bi-list"></i>
-              <img width="32" height="32" src="https://img.icons8.com/nolan/50/drag-list-down.png" alt="drag-list-down"/>
-            )}
+            {/*  */}
+            <div id="menu" className={`hamburger-menu ${isOpen ? "active" : ""}`}
+      onClick={() => setIsOpen(!isOpen)}>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+            {/*  */}
           </button>
           <div
             className={`collapse navbar-collapse ${
