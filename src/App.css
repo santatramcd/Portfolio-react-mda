@@ -474,6 +474,11 @@ img.im-banners {
 .dropdown-item:hover{
   background-color: #fff;
 }
+@media (max-width: 991px) {
+  .nav-link{
+    color: #f8f9fa;
+  }
+}
 @media (max-width: 996px) {
   .list-pc-moon {
     display: none;
