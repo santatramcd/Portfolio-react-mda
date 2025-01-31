@@ -478,6 +478,12 @@ img.im-banners {
   .nav-link{
     color: #f8f9fa;
   }
+  body.dark-mode .number-phone {
+    color: #f8f9fa;
+  }
+  .number-phone {
+    color: #212529;
+  }
 }
 @media (max-width: 996px) {
   .list-pc-moon {

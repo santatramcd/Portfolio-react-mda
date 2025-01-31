@@ -13,7 +13,7 @@ export default function Footer() {
                         <a className="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i className="bi bi-linkedin"></i></a>
                     </div>
                     <div className="col-lg-4 text-lg-end">
-                        <a className="nav-link text-decoration-none" href="#!">+261 32 46 658 49</a>
+                        <a className="nav-link text-decoration-none number-phone" href="#!">+261 32 46 658 49</a>
                     </div>
                 </div>
             </div>
