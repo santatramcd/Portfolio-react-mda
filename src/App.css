@@ -15,17 +15,21 @@ body.dark-mode {
   /* Couleur de fond sombre */
   color: #f8f9fa;
   /* Couleur de texte claire */
- 
+
 }
+
 body.dark-mode .nav-link {
   color: #f8f9fa;
 }
+
 .nav-link {
   color: #212529;
 }
-#mainNav.navbar-shrink .nav-link{
+
+#mainNav.navbar-shrink .nav-link {
   color: #f8f9fa;
 }
+
 .btn-dark-moon {
   width: 35px;
   height: 35px;
@@ -295,6 +299,8 @@ a {
 
 .navbar-toggler {
   border: none;
+  /* background: red; */
+  padding: 0!important;
 }
 
 .navbar-toggler i {
@@ -309,9 +315,11 @@ a {
 .list-mob-bg {
   display: none;
 }
-.list-pc-moon{
+
+.list-pc-moon {
   display: flex;
 }
+
 .list-mob-bg,
 .list-mob-moon,
 .list-pc-bg,
@@ -466,17 +474,20 @@ img.im-banners {
   right: 24px;
   top: 20px;
 }
-.icn-resp{
+
+.icn-resp {
   position: absolute;
   right: 24px;
   top: 25px;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
   background-color: #fff;
 }
+
 /*  */
 .hamburger-menu {
-  width: 30px;
+  /* width: 30px; */
   height: 30px;
   display: flex;
   flex-direction: column;
@@ -506,24 +517,31 @@ img.im-banners {
 .hamburger-menu.active .line:nth-child(3) {
   transform: translateY(-12.5px) rotate(-45deg);
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active {
-  outline: none !important; /* Supprime le contour bleu */
-  box-shadow: none !important; /* Supprime l'ombre */
-  border: none !important; /* Supprime la bordure */
+  outline: none !important;
+  /* Supprime le contour bleu */
+  box-shadow: none !important;
+  /* Supprime l'ombre */
+  border: none !important;
+  /* Supprime la bordure */
 }
 
 @media (max-width: 991px) {
-  .nav-link{
+  .nav-link {
     color: #f8f9fa;
   }
+
   body.dark-mode .number-phone {
     color: #f8f9fa;
   }
+
   .number-phone {
     color: #212529;
   }
 }
+
 @media (max-width: 996px) {
   .list-pc-moon {
     display: none;
@@ -563,13 +581,15 @@ img.im-banners {
     right: 68px;
     top: 24px;
   }
-
+  .list-mob-moon {
+    top: 17px;
+  }
   .list-mob-bg {
     right: 120px;
   }
 
   .dropdown {
-    padding: 6px 0px 0px 20px;
+    padding: 0px;
   }
 
   .circle {
