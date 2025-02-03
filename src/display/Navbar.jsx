@@ -6,9 +6,9 @@ export default function Navbar() {
   const [isMenuVisible, setMenuVisible] = useState(false);
   const [isDarkMode, setDarkMode] = useState(false); // État pour le mode sombre
 
-  const toggleMenu = () => {
-    setMenuVisible(!isMenuVisible);
-  };
+  // const toggleMenu = () => {
+  //   setMenuVisible(!isMenuVisible);
+  // };
 
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
@@ -40,7 +40,9 @@ export default function Navbar() {
     };
   }, []);
   const [isOpen, setIsOpen] = useState(false);
-
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev); // Inverse l'état isOpen
+  };
   return (
     <div>
       <nav
@@ -115,26 +117,22 @@ export default function Navbar() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive"
-            aria-expanded={isMenuVisible}
+            aria-expanded={isOpen}
             aria-label="Toggle navigation"
             onClick={toggleMenu}
           >
-            {/*  */}
-            <div id="menu" className={`hamburger-menu ${isOpen ? "active" : ""}`}
-      onClick={() => setIsOpen(!isOpen)}>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-            {/*  */}
+            <div
+              id="menu"
+              className={`hamburger-menu ${isOpen ? "active" : ""}`}
+            >
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
+            </div>
           </button>
           <div
-            className={`collapse navbar-collapse ${
-              isMenuVisible ? "show" : ""
-            }`}
+            className={`navbar-collapse ${isOpen ? "open" : "closed"}`} // Utilisez open ou closed
             id="navbarResponsive"
           >
             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
