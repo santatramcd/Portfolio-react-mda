@@ -579,10 +579,10 @@ img.im-banners {
   top: 0;
   padding-left: 20px;
   left: 0; 
-  width: 60%;
+  width: 300px;
   height: 100vh;
   background-color: #212529;
-  z-index: 1000;
+  z-index: 1050;
 }
 
 /* Lorsque le menu est ouvert, il glisse dans l'écran */
@@ -604,7 +604,7 @@ img.im-banners {
   justify-content: center;     
   text-decoration: none;        
   padding: 10px;               
-  font-size: 18px;             
+  font-size: 18 px;             
   /* background-color: red; */
 }
 
@@ -660,10 +660,10 @@ img.im-banners {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   transition: opacity 0.3s ease;
   opacity: 0;                  
-  z-index: 1000;                 
+  z-index: 1020;                 
 }
 
 .overlay.show {
