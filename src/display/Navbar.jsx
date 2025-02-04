@@ -100,7 +100,7 @@ export default function Navbar() {
                 { href: "#portfolio", label: "Portfolio", icon: "bi bi-briefcase" },
                 { href: "#about", label: "About", icon: "bi bi-person" },
                 { href: "#team", label: "Team", icon: "bi bi-people" },
-                { href: "#skills", label: "Skills", icon: "bi bi-graph-up-arrow" },
+                { href: "#Skills", label: "Skills", icon: "bi bi-graph-up-arrow" },
                 { href: "#contact", label: "Contact", icon: "bi bi-telephone" },
               ].map((item, index) => (
                 <li className="nav-item" key={index}>
