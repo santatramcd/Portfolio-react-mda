@@ -579,7 +579,7 @@ img.im-banners {
   top: 0;
   padding-left: 20px;
   left: 0; 
-  width: 50%;
+  width: 60%;
   height: 100vh;
   background-color: #212529;
   z-index: 1000;
@@ -587,16 +587,16 @@ img.im-banners {
 
 /* Lorsque le menu est ouvert, il glisse dans l'écran */
 .navbar-collapse.open {
-  transform: translateX(0); /* Ramène la navbar dans l'écran */
+  transform: translateX(0);
 }
 
 /* Lorsque le menu est fermé, il glisse hors de l'écran à gauche */
 .navbar-collapse.closed {
-  transform: translateX(-100%); /* Ramène la navbar hors de l'écran à gauche */
+  transform: translateX(-100%);
 }
 .overlay {
-  opacity: 0.5; /* Applique une opacité à tout le contenu */
-  pointer-events: none; /* Désactive les événements de souris sur le contenu */
+  opacity: 0.5; 
+  pointer-events: none;
 }
 .nav-link {
   display: flex;              
@@ -654,20 +654,20 @@ img.im-banners {
   }
 }
 .overlay {
-  display: none;                  /* Masquer par défaut */
-  position: fixed;               /* Position fixe pour recouvrir l'écran */
+  display: none;               
+  position: fixed;           
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
-  transition: opacity 0.3s ease; /* Animation de transition */
-  opacity: 0;                    /* Opacité initiale */
-  z-index: 1000;                 /* Assurez-vous que l'overlay est au-dessus des autres éléments */
+  background-color: rgba(0, 0, 0, 0.5); 
+  transition: opacity 0.3s ease;
+  opacity: 0;                  
+  z-index: 1000;                 
 }
 
 .overlay.show {
-  display: block;                /* Afficher lorsque 'show' est appliqué */
-  opacity: 1;                   /* Opacité complète */
+  display: block;               
+  opacity: 1;                  
 }
 
