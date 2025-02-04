@@ -299,7 +299,7 @@ a {
 .navbar-toggler {
   border: none;
   /* background: red; */
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 .navbar-toggler i {
@@ -523,10 +523,12 @@ img.im-banners {
   box-shadow: none !important;
   border: none !important;
 }
+
 .santatra-tel,
 .nav-link i {
   display: none;
 }
+
 @media (max-width: 991px) {
   .nav-link {
     color: #f8f9fa;
@@ -572,54 +574,76 @@ img.im-banners {
   }
 
   /* text */
-.navbar-collapse {
-  transition: transform 0.5s ease;
-  transform: translateX(-100%);
-  position: absolute;
-  top: 0;
-  padding-left: 20px;
-  left: 0; 
-  width: 210px;
-  height: 100vh;
-  background-color: #212529;
-  z-index: 1050;
-}
+  .navbar-collapse {
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+    padding-left: 20px;
+    left: 0;
+    width: 210px;
+    height: 100vh;
+    /* background-color: #212529; */
+    z-index: 1050;
+  }
 
-/* Lorsque le menu est ouvert, il glisse dans l'écran */
-.navbar-collapse.open {
-  transform: translateX(0);
-}
+  body .navbar-collapse,
+  body.light-mode .navbar-collapse {
+    background-color: #fff;
+  }
 
-/* Lorsque le menu est fermé, il glisse hors de l'écran à gauche */
-.navbar-collapse.closed {
-  transform: translateX(-100%);
-}
-.overlay {
-  opacity: 0.5; 
-  pointer-events: none;
-}
-.nav-link {
-  display: flex;              
-  align-items: center;        
-  justify-content: center;     
-  text-decoration: none;        
-  padding: 10px;               
-  font-size: 18 px;             
-  /* background-color: red; */
-}
+  body #mainNav .navbar-nav .nav-item .nav-link,
+  body.light-mode #mainNav .navbar-nav .nav-item .nav-link {
+    color: #000000;
+  }
 
-.nav-link i {
-  display: block;
-  font-size: 24px;             
-  margin-right: 18px;
-  color: var(--bs-warning);
+  body.dark-mode .navbar-collapse {
+    background-color: #000000;
+  }
 
-}
-.santatra-tel{
-  display: block;
-  padding: 25px 12px;
-  width: 50%;
-}
+  body.dark-mode #mainNav .navbar-nav .nav-item .nav-link {
+    color: #f8f9fa;
+  }
+
+
+  /* Lorsque le menu est ouvert, il glisse dans l'écran */
+  .navbar-collapse.open {
+    transform: translateX(0);
+  }
+
+  /* Lorsque le menu est fermé, il glisse hors de l'écran à gauche */
+  .navbar-collapse.closed {
+    transform: translateX(-100%);
+  }
+
+  .overlay {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18 px;
+    /* background-color: red; */
+  }
+
+  .nav-link i {
+    display: block;
+    font-size: 24px;
+    margin-right: 18px;
+    color: var(--bs-warning);
+
+  }
+
+  .santatra-tel {
+    display: block;
+    padding: 25px 12px;
+    width: 50%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -630,9 +654,11 @@ img.im-banners {
     right: 68px;
     top: 24px;
   }
+
   .list-mob-moon {
     top: 17px;
   }
+
   .list-mob-bg {
     right: 120px;
   }
@@ -655,21 +681,21 @@ img.im-banners {
     transform-origin: 0 175px;
   }
 }
+
 .overlay {
-  display: none;               
-  position: fixed;           
+  display: none;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity 0.3s ease;
-  opacity: 0;                  
-  z-index: 1020;                 
+  opacity: 0;
+  z-index: 1020;
 }
 
 .overlay.show {
-  display: block;               
-  opacity: 1;                  
+  display: block;
+  opacity: 1;
 }
-

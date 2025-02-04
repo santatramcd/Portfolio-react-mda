@@ -12,9 +12,14 @@ export default function Navbar() {
   };
 
   const toggleDarkMode = () => {
-    setDarkMode(!isDarkMode);
-    document.body.classList.toggle("dark-mode", !isDarkMode);
+    setDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      document.body.classList.toggle("dark-mode", newMode);
+      document.body.classList.toggle("light-mode", !newMode); // Ajoute ou enlève la classe light-mode
+      return newMode;
+    });
   };
+
 
   const changeColor = (color) => {
     document.documentElement.style.setProperty("--bs-warning", color);
