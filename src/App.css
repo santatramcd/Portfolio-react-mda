@@ -520,11 +520,8 @@ img.im-banners {
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: none !important;
-  /* Supprime le contour bleu */
   box-shadow: none !important;
-  /* Supprime l'ombre */
   border: none !important;
-  /* Supprime la bordure */
 }
 .santatra-tel,
 .nav-link i {
@@ -576,16 +573,16 @@ img.im-banners {
 
   /* text */
 .navbar-collapse {
-  transition: transform 0.5s ease; /* Animation de la transition */
-  transform: translateX(-100%); /* Commence hors de l'écran à gauche */
-  position: absolute; /* Pour permettre le déplacement */
+  transition: transform 0.5s ease;
+  transform: translateX(-100%);
+  position: absolute;
   top: 0;
   padding-left: 20px;
-  left: 0; /* Aligne à gauche */
-  width: 60%; /* Prend toute la largeur de l'écran */
+  left: 0; 
+  width: 50%;
   height: 100vh;
-  background-color: #212529; /* Couleur de fond de la navbar */
-  z-index: 1000; /* Assurez-vous qu'elle est au-dessus des autres éléments */
+  background-color: #212529;
+  z-index: 1000;
 }
 
 /* Lorsque le menu est ouvert, il glisse dans l'écran */
