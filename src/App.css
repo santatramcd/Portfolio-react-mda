@@ -236,7 +236,6 @@ a {
 
 .portfolio-filters li.active {
   background-color: var(--bs-warning);
-
   color: white;
   border-color: var(--bs-warning);
 }
@@ -527,8 +526,10 @@ img.im-banners {
   border: none !important;
   /* Supprime la bordure */
 }
-
-
+.santatra-tel,
+.nav-link i {
+  display: none;
+}
 @media (max-width: 991px) {
   .nav-link {
     color: #f8f9fa;
@@ -578,10 +579,11 @@ img.im-banners {
   transition: transform 0.5s ease; /* Animation de la transition */
   transform: translateX(-100%); /* Commence hors de l'écran à gauche */
   position: absolute; /* Pour permettre le déplacement */
-  top: 103px;
+  top: 0;
   padding-left: 20px;
   left: 0; /* Aligne à gauche */
-  width: 100%; /* Prend toute la largeur de l'écran */
+  width: 60%; /* Prend toute la largeur de l'écran */
+  height: 100vh;
   background-color: #212529; /* Couleur de fond de la navbar */
   z-index: 1000; /* Assurez-vous qu'elle est au-dessus des autres éléments */
 }
@@ -598,6 +600,26 @@ img.im-banners {
 .overlay {
   opacity: 0.5; /* Applique une opacité à tout le contenu */
   pointer-events: none; /* Désactive les événements de souris sur le contenu */
+}
+.nav-link {
+  display: flex;              
+  align-items: center;        
+  justify-content: center;     
+  text-decoration: none;        
+  padding: 10px;               
+  font-size: 18px;             
+  /* background-color: red; */
+}
+
+.nav-link i {
+  display: block;
+  font-size: 24px;             
+  margin-right: 18px;
+}
+.santatra-tel{
+  display: block;
+  padding: 25px 12px;
+  width: 50%;
 }
 }
 
@@ -633,8 +655,22 @@ img.im-banners {
   .text span {
     transform-origin: 0 175px;
   }
-  .navbar-collapse {
-    top: 72px;
-  }
-  
 }
+.overlay {
+  display: none;                  /* Masquer par défaut */
+  position: fixed;               /* Position fixe pour recouvrir l'écran */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+  transition: opacity 0.3s ease; /* Animation de transition */
+  opacity: 0;                    /* Opacité initiale */
+  z-index: 1000;                 /* Assurez-vous que l'overlay est au-dessus des autres éléments */
+}
+
+.overlay.show {
+  display: block;                /* Afficher lorsque 'show' est appliqué */
+  opacity: 1;                   /* Opacité complète */
+}
+

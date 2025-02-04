@@ -4,20 +4,21 @@ import Mda from "../assets/logos/mda.png";
 
 export default function Navbar() {
   const [isMenuVisible, setMenuVisible] = useState(false);
-  const [isDarkMode, setDarkMode] = useState(false); // État pour le mode sombre
+  const [isDarkMode, setDarkMode] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // const toggleMenu = () => {
-  //   setMenuVisible(!isMenuVisible);
-  // };
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
 
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
-    document.body.classList.toggle("dark-mode", !isDarkMode); // Ajoute ou enlève la classe dark-mode
+    document.body.classList.toggle("dark-mode", !isDarkMode);
   };
 
   const changeColor = (color) => {
-    document.documentElement.style.setProperty("--bs-warning", color); // Change la couleur de la variable CSS
-    document.documentElement.style.setProperty("--bs-primary", color); // Change la couleur de la variable CSS si nécessaire
+    document.documentElement.style.setProperty("--bs-warning", color);
+    document.documentElement.style.setProperty("--bs-primary", color);
   };
 
   useEffect(() => {
@@ -39,56 +40,34 @@ export default function Navbar() {
       window.removeEventListener("scroll", navbarShrink);
     };
   }, []);
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen((prev) => !prev); // Inverse l'état isOpen
-  };
+
   return (
     <div>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark fixed-top"
-        id="mainNav"
-      >
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div className="container">
           <a className="navbar-brand" href="#page-top">
             <img src={Mda} alt="Logo Mada Digital Agency" />
           </a>
           <li className="list-mob-bg">
             <div className="dropdown">
-              <a
-                className="btn-secondary dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a className="btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <span className="span-card">
                   <span className="bg-btn"></span>
                 </span>
               </a>
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li>
-                  <a
-                    className="dropdown-item"
-                    onClick={() => changeColor("#f43731")}
-                  >
+                  <a className="dropdown-item" onClick={() => changeColor("#f43731")}>
                     <span className="bg-f43731"></span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="dropdown-item"
-                    onClick={() => changeColor("#0048d5")}
-                  >
+                  <a className="dropdown-item" onClick={() => changeColor("#0048d5")}>
                     <span className="bg-0048d5"></span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="dropdown-item"
-                    onClick={() => changeColor("#ffc800")}
-                  >
+                  <a className="dropdown-item" onClick={() => changeColor("#ffc800")}>
                     <span className="bg-ffc800"></span>
                   </a>
                 </li>
@@ -98,54 +77,35 @@ export default function Navbar() {
           <li className="list-mob-moon">
             <button className="btn-dark-moon" onClick={toggleDarkMode}>
               {isDarkMode ? (
-                <img
-                  width="40"
-                  height="40"
-                  src="https://img.icons8.com/emoji/48/sun-with-face.png"
-                  alt="sun-with-face"
-                />
+                <img width="40" height="40" src="https://img.icons8.com/emoji/48/sun-with-face.png" alt="sun-with-face" />
               ) : (
-                <img
-                  width="32"
-                  height="32"
-                  src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/external-moon-bedroom-nawicon-outline-color-nawicon.png"
-                  alt="external-moon-bedroom-nawicon-outline-color-nawicon"
-                />
+                <img width="32" height="32" src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/external-moon-bedroom-nawicon-outline-color-nawicon.png" alt="external-moon-bedroom-nawicon-outline-color-nawicon" />
               )}
             </button>
           </li>
-          <button
-            className="navbar-toggler"
-            type="button"
-            aria-controls="navbarResponsive"
-            aria-expanded={isOpen}
-            aria-label="Toggle navigation"
-            onClick={toggleMenu}
-          >
-            <div
-              id="menu"
-              className={`hamburger-menu ${isOpen ? "active" : ""}`}
-            >
+          <button className="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded={isOpen} aria-label="Toggle navigation" onClick={toggleMenu}>
+            <div id="menu" className={`hamburger-menu ${isOpen ? "active" : ""}`}>
               <div className="line"></div>
               <div className="line"></div>
               <div className="line"></div>
             </div>
           </button>
-          <div
-            className={`navbar-collapse ${isOpen ? "open" : "closed"}`} // Utilisez open ou closed
-            id="navbarResponsive"
-          >
+          <div className={`navbar-collapse ${isOpen ? "open" : "closed"}`} id="navbarResponsive">
+            <a href="#page-top">
+              <img className="santatra-tel" src={Mda} alt="mada digital" />
+            </a>
             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
               {[
-                { href: "#services", label: "Services" },
-                { href: "#portfolio", label: "Portfolio" },
-                { href: "#about", label: "About" },
-                { href: "#team", label: "Team" },
-                { href: "#Skills", label: "Skills" },
-                { href: "#contact", label: "Contact" },
+                { href: "#services", label: "Services", icon: "bi bi-gear" },
+                { href: "#portfolio", label: "Portfolio", icon: "bi bi-briefcase" },
+                { href: "#about", label: "About", icon: "bi bi-person" },
+                { href: "#team", label: "Team", icon: "bi bi-people" },
+                { href: "#skills", label: "Skills", icon: "bi bi-graph-up-arrow" },
+                { href: "#contact", label: "Contact", icon: "bi bi-telephone" },
               ].map((item, index) => (
                 <li className="nav-item" key={index}>
                   <a className="nav-link" href={item.href}>
+                    <i className={item.icon}></i>
                     {item.label}
                   </a>
                 </li>
@@ -153,61 +113,32 @@ export default function Navbar() {
               <li className="list-pc-moon">
                 <button className="btn-dark-moon" onClick={toggleDarkMode}>
                   {isDarkMode ? (
-                    <img
-                      width="40"
-                      height="40"
-                      src="https://img.icons8.com/emoji/48/sun-with-face.png"
-                      alt="sun-with-face"
-                    />
+                    <img width="40" height="40" src="https://img.icons8.com/emoji/48/sun-with-face.png" alt="sun-with-face" />
                   ) : (
-                    <img
-                      width="32"
-                      height="32"
-                      src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/external-moon-bedroom-nawicon-outline-color-nawicon.png"
-                      alt="external-moon-bedroom-nawicon-outline-color-nawicon"
-                    />
+                    <img width="32" height="32" src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/external-moon-bedroom-nawicon-outline-color-nawicon.png" alt="external-moon-bedroom-nawicon-outline-color-nawicon" />
                   )}
                 </button>
               </li>
               <li className="list-pc-bg">
                 <div className="dropdown">
-                  <a
-                    className="btn-secondary dropdown-toggle"
-                    href="#"
-                    role="button"
-                    id="dropdownMenuLink"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a className="btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     <span className="span-card">
                       <span className="bg-btn"></span>
                     </span>
                   </a>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="dropdownMenuLink"
-                  >
+                  <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li>
-                      <a
-                        className="dropdown-item"
-                        onClick={() => changeColor("#f43731")}
-                      >
+                      <a className="dropdown-item" onClick={() => changeColor("#f43731")}>
                         <span className="bg-f43731"></span>
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        onClick={() => changeColor("#0048d5")}
-                      >
+                      <a className="dropdown-item" onClick={() => changeColor("#0048d5")}>
                         <span className="bg-0048d5"></span>
                       </a>
                     </li>
                     <li>
-                      <a
-                        className="dropdown-item"
-                        onClick={() => changeColor("#ffc800")}
-                      >
+                      <a className="dropdown-item" onClick={() => changeColor("#ffc800")}>
                         <span className="bg-ffc800"></span>
                       </a>
                     </li>
@@ -218,6 +149,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+      <div id="opacity" className={`overlay ${isOpen ? "show" : ""}`}></div>
     </div>
   );
 }
