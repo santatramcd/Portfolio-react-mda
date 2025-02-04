@@ -612,6 +612,8 @@ img.im-banners {
   display: block;
   font-size: 24px;             
   margin-right: 18px;
+  color: var(--bs-warning);
+
 }
 .santatra-tel{
   display: block;
