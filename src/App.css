@@ -524,6 +524,7 @@ img.im-banners {
   border: none !important;
 }
 
+.div-ov-icn,
 .santatra-tel,
 .nav-link i {
   display: none;
@@ -644,6 +645,17 @@ img.im-banners {
     padding: 25px 12px;
     width: 50%;
   }
+  .div-ov-icn {
+    /* background: red; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+  }
 }
 
 @media (max-width: 400px) {
@@ -680,6 +692,8 @@ img.im-banners {
   .text span {
     transform-origin: 0 175px;
   }
+
+ 
 }
 
 .overlay {
@@ -699,8 +713,26 @@ img.im-banners {
   display: block;
   opacity: 1;
 }
+
 body:has(.overlay.show) .span-card,
 body:has(.overlay.show) .btn-dark-moon,
 body:has(.overlay.show) .hamburger-menu {
   opacity: 0.5;
+}
+
+
+.div-ov-icn li {
+  list-style: none;
+  border: 1px solid var(--bs-warning);
+  border-radius: 50%;
+}
+.div-ov-icn li a{
+  color: var(--bs-warning);
+}
+.div-ov-icn li i {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 4px 11px;
+
 }
