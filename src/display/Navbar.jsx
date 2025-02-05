@@ -73,17 +73,17 @@ export default function Navbar() {
                 <li>
                   <a
                     className="dropdown-item"
-                    onClick={() => changeColor("#f43731")}
+                    onClick={() => changeColor("#ff0000")}
                   >
-                    <span className="bg-f43731"></span>
+                    <span className="bg-ff0000"></span>
                   </a>
                 </li>
                 <li>
                   <a
                     className="dropdown-item"
-                    onClick={() => changeColor("#0048d5")}
+                    onClick={() => changeColor("#b01ba5")}
                   >
-                    <span className="bg-0048d5"></span>
+                    <span className="bg-b01ba5"></span>
                   </a>
                 </li>
                 <li>
@@ -209,17 +209,17 @@ export default function Navbar() {
                     <li>
                       <a
                         className="dropdown-item"
-                        onClick={() => changeColor("#f43731")}
+                        onClick={() => changeColor("#ff0000")}
                       >
-                        <span className="bg-f43731"></span>
+                        <span className="bg-ff0000"></span>
                       </a>
                     </li>
                     <li>
                       <a
                         className="dropdown-item"
-                        onClick={() => changeColor("#0048d5")}
+                        onClick={() => changeColor("#b01ba5")}
                       >
-                        <span className="bg-0048d5"></span>
+                        <span className="bg-b01ba5"></span>
                       </a>
                     </li>
                     <li>

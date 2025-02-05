@@ -69,18 +69,18 @@ body.dark-mode .nav-link {
 
 
 .bg-btn,
-.bg-0048d5,
+.bg-b01ba5,
 .bg-ffc800,
-.bg-f43731 {
+.bg-ff0000 {
   width: 20px;
   height: 20px;
-  background: #f43731;
+  background: #ff0000;
   display: inline-block;
   border-radius: 50%;
 }
 
-.bg-0048d5 {
-  background: #0048d5;
+.bg-b01ba5 {
+  background: #b01ba5;
 }
 
 .bg-ffc800 {
@@ -461,13 +461,13 @@ img.im-banners {
 }
 
 .name-sm {
-  background: linear-gradient(to right, var(--bs-warning), #c16ae3);
+  /* background: linear-gradient(to right, var(--bs-warning), #c16ae3); */
+  background: linear-gradient(to left, var(--bs-warning) 0%, #c6019a 51%, var(--bs-warning) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
-
 .icn-e-com {
   position: absolute;
   right: 24px;
