@@ -69,7 +69,7 @@ body.dark-mode .nav-link {
 
 
 .bg-btn,
-.bg-b01ba5,
+.bg-10bbf1,
 .bg-ffc800,
 .bg-ff0000 {
   width: 20px;
@@ -79,8 +79,8 @@ body.dark-mode .nav-link {
   border-radius: 50%;
 }
 
-.bg-b01ba5 {
-  background: #b01ba5;
+.bg-10bbf1 {
+  background: #10bbf1;
 }
 
 .bg-ffc800 {

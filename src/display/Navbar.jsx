@@ -81,9 +81,9 @@ export default function Navbar() {
                 <li>
                   <a
                     className="dropdown-item"
-                    onClick={() => changeColor("#b01ba5")}
+                    onClick={() => changeColor("#10bbf1")}
                   >
-                    <span className="bg-b01ba5"></span>
+                    <span className="bg-10bbf1"></span>
                   </a>
                 </li>
                 <li>
@@ -217,9 +217,9 @@ export default function Navbar() {
                     <li>
                       <a
                         className="dropdown-item"
-                        onClick={() => changeColor("#b01ba5")}
+                        onClick={() => changeColor("#10bbf1")}
                       >
-                        <span className="bg-b01ba5"></span>
+                        <span className="bg-10bbf1"></span>
                       </a>
                     </li>
                     <li>
