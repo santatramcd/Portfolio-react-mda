@@ -20,6 +20,7 @@ export default function Navbar() {
     });
   };
 
+  
 
   const changeColor = (color) => {
     document.documentElement.style.setProperty("--bs-warning", color);
