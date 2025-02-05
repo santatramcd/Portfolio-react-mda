@@ -651,7 +651,7 @@ img.im-banners {
     left: 0;
     width: 100%;
     display: flex;
-    bottom: 25px;
+    bottom: 50px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0;
