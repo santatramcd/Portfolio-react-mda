@@ -1,6 +1,26 @@
 import React from "react";
-
+import { useState, useEffect } from "react";
 export default function Footer() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    // Fonction pour gérer le scroll
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 200) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
+    // Fonction pour remonter en haut
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
   return (
     <div className="container">
      <footer className="footer py-4">
@@ -18,6 +38,14 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
+        <div
+      className={`div-fixed ${isVisible ? "show" : "hide"}`}
+      onClick={scrollToTop}
+    >
+      <a href="#">
+        <i className="bi bi-chevron-up"></i>
+      </a>
+    </div>
     </div>
   );
 }
