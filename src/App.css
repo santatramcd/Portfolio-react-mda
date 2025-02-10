@@ -756,7 +756,7 @@ img.im-banners {
   display: block;
   opacity: 1;
 }
-
+body:has(.overlay.show) .list-mob-i18 a,
 body:has(.overlay.show) .span-card,
 body:has(.overlay.show) .btn-dark-moon,
 body:has(.overlay.show) .hamburger-menu {
