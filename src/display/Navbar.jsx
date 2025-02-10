@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Mda from "../assets/logos/mda.png";
+import "../i18n";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -45,6 +47,14 @@ export default function Navbar() {
     };
   }, []);
 
+  const { t, i18n } = useTranslation();
+  const [currentLang, setCurrentLang] = useState("fr"); // Langue par défaut
+
+  const changeLanguage = () => {
+    const newLang = currentLang === "fr" ? "en" : "fr";
+    i18n.changeLanguage(newLang);
+    setCurrentLang(newLang);
+  };
   return (
     <div>
       <nav
@@ -55,6 +65,7 @@ export default function Navbar() {
           <a className="navbar-brand" href="#page-top">
             <img src={Mda} alt="Logo Mada Digital Agency" />
           </a>
+          
           <li className="list-mob-bg">
             <div className="dropdown">
               <a
@@ -116,6 +127,24 @@ export default function Navbar() {
               )}
             </button>
           </li>
+          <li className="list-mob-i18">
+            <a onClick={changeLanguage} className="cursor-pointer">
+              <img
+                width="30"
+                height="30"
+                src={
+                  currentLang === "fr"
+                    ? "https://img.icons8.com/color/48/france-circular.png"
+                    : "https://img.icons8.com/color/48/great-britain-circular.png"
+                }
+                alt={
+                  currentLang === "fr"
+                    ? "great-britain-circular"
+                    : "france-circular"
+                }
+              />
+            </a>
+          </li>
           <button
             className="navbar-toggler"
             type="button"
@@ -164,11 +193,23 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
-                <ul className="div-ov-icn">
-                  <li><a href="https://www.facebook.com/profile.php?id=100010304222710"><i class="bi bi-facebook"></i></a></li>
-                  <li><a href="https://github.com/santatramcd"><i class="bi bi-github"></i></a></li>
-                  <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                </ul>
+              <ul className="div-ov-icn">
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100010304222710">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/santatramcd">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
               <li className="list-pc-moon">
                 <button className="btn-dark-moon" onClick={toggleDarkMode}>
                   {isDarkMode ? (
@@ -232,6 +273,24 @@ export default function Navbar() {
                     </li>
                   </ul>
                 </div>
+              </li>
+              <li className="list-pc-bg ms-3">
+                <a onClick={changeLanguage} className="cursor-pointer">
+                  <img
+                    width="30"
+                    height="30"
+                    src={
+                      currentLang === "fr"
+                        ? "https://img.icons8.com/color/48/france-circular.png"
+                        : "https://img.icons8.com/color/48/great-britain-circular.png"
+                    }
+                    alt={
+                      currentLang === "fr"
+                        ? "great-britain-circular"
+                        : "france-circular"
+                    }
+                  />
+                </a>
               </li>
             </ul>
           </div>

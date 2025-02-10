@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import banniere from "../../assets/bannière.jpg";
+import { useTranslation } from 'react-i18next';
+
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
 
@@ -15,6 +17,8 @@ export default function About() {
 
     setRotatedText(transformedText);
   }, []);
+  const { t } = useTranslation();
+
   return (
     <div>
       <header className="masthead " id="page-top">
@@ -22,17 +26,17 @@ export default function About() {
           <div className="row row-bann animated animatedFadeInUp fadeInUp">
             <div className="col-lg-6" >
               <div className="masthead-subheading">
-                Je Suis Santatra Michado
+              {t('Iam')} Santatra Michado
               </div>
               <div className="masthead-heading text-uppercase">
-                Développeur <span className="name-sm"> Front-End</span>
+              {t('dev')} <span className="name-sm"> Front-End</span>
               </div>
               <a
                 className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"
                 href="/cv-santatra.pdf"
                 download="Santatra-Michado-CV.pdf"
               >
-                Télécharger CV
+                {t('down')}
               </a>
             </div>
             <div className="col-lg-6">

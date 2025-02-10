@@ -307,6 +307,7 @@ a {
   color: #ccc;
 }
 
+.list-mob-i18,
 .list-mob-moon {
   display: none;
 }
@@ -318,7 +319,6 @@ a {
 .list-pc-moon {
   display: flex;
 }
-
 .list-mob-bg,
 .list-mob-moon,
 .list-pc-bg,
@@ -586,7 +586,7 @@ img.im-banners {
   .list-pc-moon {
     display: none;
   }
-
+  .list-mob-i18,
   .list-mob-moon {
     display: flex;
   }

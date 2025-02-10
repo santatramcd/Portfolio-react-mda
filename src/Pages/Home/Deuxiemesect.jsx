@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <section className="page-section" id="services" data-aos="fade-up">
         <div className="container">
           <div className="text-center">
-            <h2 className="section-heading text-uppercase">Nos Services</h2>
+            <h2 className="section-heading text-uppercase">{t('service')}</h2>
             <h3 className="section-subheading text-muted">
-              Découvrez nos solutions conçues pour répondre à vos besoins
-              numériques.
+            {t('decouvre')}
             </h3>
           </div>
           <div className="row text-center">
@@ -21,9 +24,9 @@ export default function About() {
                 <img width="66" height="66" src="https://img.icons8.com/external-others-bomsymbols-/91/external-code-flat-02-digital-design-others-bomsymbols-.png" className="icn-e-com" alt="external-code-flat-02-digital-design-others-bomsymbols-"/>
                 </span>
               </span>
-              <h4 className="mt-3">Optimisation du Code</h4>
+              <h4 className="mt-3">{t('opti')}</h4>
               <p className="text-muted">
-              Améliorez la lisibilité et la maintenabilité de votre code grâce aux meilleures pratiques et à un refactoring efficace
+              {t('ameliore')}
               </p>
             </div>
             <div className="col-md-4">
@@ -41,9 +44,7 @@ export default function About() {
               </span>
               <h4 className="my-3">Responsive Design</h4>
               <p className="text-muted">
-                Profitez d'un design optimisé pour tous les appareils,
-                garantissant une navigation fluide sur mobile, tablette et
-                ordinateur.
+              {t('profite')}
               </p>
             </div>
             <div className="col-md-4">
@@ -59,10 +60,9 @@ export default function About() {
                   />
                 </span>
               </span>
-              <h4 className="my-3">Sécurité Web</h4>
+              <h4 className="my-3">{t('securiteweb')}</h4>
               <p className="text-muted">
-                Protégez votre site web et les données de vos utilisateurs grâce
-                à nos solutions avancées de sécurité en ligne.
+              {t('protegesite')}
               </p>
             </div>
           </div>
