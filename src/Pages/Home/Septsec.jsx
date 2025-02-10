@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import { useTranslation } from 'react-i18next';
+
 
 export default function ContactForm() {
   // États pour les données du formulaire, les messages de statut, et les erreurs de validation
@@ -98,15 +100,16 @@ export default function ContactForm() {
       setSuccessMessage("");
     }
   };
+  const { t } = useTranslation();
 
   return (
     <div>
       <section className="page-section" id="contact">
         <div className="container">
           <div className="text-center">
-            <h2 className="section-heading text-uppercase">Demande de Création de Site Web</h2>
+            <h2 className="section-heading text-uppercase">{t('demandesite')}</h2>
             <h3 className="section-subheading text-muted">
-            Nous sommes à votre écoute pour concrétiser vos projets web. Remplissez le formulaire ci-dessous, et nous vous répondrons dans les plus brefs délais.
+            {t('projetweb')}
             </h3>
           </div>
           <form onSubmit={handleSubmit} id="contactForm">

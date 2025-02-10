@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
     useEffect(() => {
@@ -9,6 +10,7 @@ export default function About() {
             duration: 1000,
         });
     }, []);
+    const { t } = useTranslation();
 
     return (
         <div>
@@ -17,8 +19,7 @@ export default function About() {
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Skills</h2>
                         <h3 className="section-subheading text-muted">
-                            Découvrez nos compétences et expertises développées pour
-                            concrétiser vos projets numériques.
+                        {t('skills')}
                         </h3>
                     </div>
                     <div className="row">

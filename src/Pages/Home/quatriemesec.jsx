@@ -5,6 +5,8 @@ import about1 from "../../assets/about/1.jpg";
 import about2 from "../../assets/about/2.jpg";
 import about3 from "../../assets/about/3.jpg";
 import about4 from "../../assets/about/4.jpg";
+import { useTranslation } from 'react-i18next';
+
 
 export default function About() {
   useEffect(() => {
@@ -13,6 +15,7 @@ export default function About() {
       duration: 1000,
     });
   }, []);
+  const { t } = useTranslation();
   return (
     <div>
       <section className="page-section" id="about">
@@ -20,9 +23,7 @@ export default function About() {
           <div className="text-center">
             <h2 className="section-heading text-uppercase">About</h2>
             <h3 className="section-subheading text-muted">
-              Découvrez notre vision, notre expertise et l'engagement de notre
-              équipe à fournir des solutions innovantes et adaptées aux besoins
-              de nos clients.
+            {t('vision')}
             </h3>
           </div>
           <ul className="timeline">
@@ -41,11 +42,7 @@ export default function About() {
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Passionné par le développement front-end, je conçois des
-                    interfaces utilisateur modernes et intuitives. Mon expertise
-                    couvre les technologies les plus récentes pour offrir des
-                    expériences interactives et engageantes, tout en assurant
-                    performance et accessibilité.
+                  {t('passionné')}
                   </p>
                 </div>
               </div>
@@ -65,11 +62,7 @@ export default function About() {
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    En tant que développeur front-end, je m'engage à créer des
-                    interfaces élégantes et fonctionnelles. Mon objectif est de
-                    transformer des concepts en solutions numériques pratiques
-                    et accessibles, tout en optimisant l'expérience utilisateur
-                    à chaque étape du processus de développement.
+                  {t('devfront')}
                   </p>
                 </div>
               </div>
@@ -89,12 +82,7 @@ export default function About() {
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    En tant que freelance, je me spécialise dans la création de
-                    sites web personnalisés et performants. Mon objectif est de
-                    travailler en étroite collaboration avec mes clients pour
-                    transformer leurs idées en solutions digitales sur mesure,
-                    tout en assurant une expérience utilisateur fluide et
-                    optimale.
+                  {t('freelance')}
                   </p>
                 </div>
               </div>
@@ -114,14 +102,7 @@ export default function About() {
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Au cours de ma formation en Licence 3 Informatique à
-                    l'Université privée Hay, j'ai acquis des compétences
-                    approfondies dans le développement logiciel, la gestion de
-                    bases de données, ainsi que dans les systèmes et réseaux.
-                    J'ai également eu l'opportunité de participer à plusieurs
-                    projets pratiques, renforçant ainsi mes connaissances en
-                    programmation, développement web, et en architecture des
-                    systèmes informatiques.
+                  {t('formation')}
                   </p>
                 </div>
               </div>

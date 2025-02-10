@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import Mda from "../assets/logos/mda.png";
 import "../i18n";
 import { useTranslation } from "react-i18next";
+import Sun from "../assets/logos/sun-with-face.png";
+import Moon from "../assets/logos/moon.png";
+import Fr from "../assets/logos/france-circular.png";
+import En from "../assets/logos/great-britain-circular.png";
 
 export default function Navbar() {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -114,14 +118,14 @@ export default function Navbar() {
                 <img
                   width="40"
                   height="40"
-                  src="https://img.icons8.com/emoji/48/sun-with-face.png"
+                  src={Sun}
                   alt="sun-with-face"
                 />
               ) : (
                 <img
                   width="32"
                   height="32"
-                  src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/external-moon-bedroom-nawicon-outline-color-nawicon.png"
+                  src={Moon}
                   alt="external-moon-bedroom-nawicon-outline-color-nawicon"
                 />
               )}
@@ -134,8 +138,8 @@ export default function Navbar() {
                 height="30"
                 src={
                   currentLang === "fr"
-                    ? "https://img.icons8.com/color/48/france-circular.png"
-                    : "https://img.icons8.com/color/48/great-britain-circular.png"
+                    ? Fr
+                    : En
                 }
                 alt={
                   currentLang === "fr"
@@ -216,14 +220,14 @@ export default function Navbar() {
                     <img
                       width="40"
                       height="40"
-                      src="https://img.icons8.com/emoji/48/sun-with-face.png"
+                      src={Sun}
                       alt="sun-with-face"
                     />
                   ) : (
                     <img
                       width="32"
                       height="32"
-                      src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/external-moon-bedroom-nawicon-outline-color-nawicon.png"
+                      src={Moon}
                       alt="external-moon-bedroom-nawicon-outline-color-nawicon"
                     />
                   )}
@@ -281,8 +285,8 @@ export default function Navbar() {
                     height="30"
                     src={
                       currentLang === "fr"
-                        ? "https://img.icons8.com/color/48/france-circular.png"
-                        : "https://img.icons8.com/color/48/great-britain-circular.png"
+                        ? Fr
+                        : En
                     }
                     alt={
                       currentLang === "fr"

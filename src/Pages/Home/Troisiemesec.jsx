@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -52,6 +53,7 @@ export default function Home() {
       : data.filter((item) =>
           item.techno.toLowerCase().includes(filter.toLowerCase())
         );
+  const { t } = useTranslation();
 
   return (
     <>
@@ -61,7 +63,7 @@ export default function Home() {
             <div className="text-center">
               <h2 className="section-heading text-uppercase">Portfolio</h2>
               <h3 className="section-subheading text-muted">
-                Découvrez mes projets récents.
+              {t('projetrecent')}
               </h3>
             </div>
           </div>
@@ -73,9 +75,7 @@ export default function Home() {
               data-layout="masonry"
               data-sort="original-order"
             >
-              <ul
-                className="portfolio-filters isotope-filters"
-              >
+              <ul className="portfolio-filters isotope-filters">
                 <li
                   className={` ${filter === "*" ? "active" : ""}`}
                   onClick={() => setFilter("*")}
@@ -125,10 +125,7 @@ export default function Home() {
               {!loading && !error && (
                 <div className="row">
                   {filteredData.map((item) => (
-                    <div
-                      key={item.id}
-                      className="col-lg-4 col-sm-6 mb-4"
-                    >
+                    <div key={item.id} className="col-lg-4 col-sm-6 mb-4">
                       <div className="portfolio-item">
                         <a className="portfolio-link" href="#">
                           <div className="portfolio-hover">

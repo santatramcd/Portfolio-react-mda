@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 import team1 from "../../assets/team/1.jpg";
 import team2 from "../../assets/team/2.jpg";
 import team3 from "../../assets/team/3.jpg";
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <div>
       <section className="page-section bg-light" id="team">
         <div className="container">
           <div className="text-center">
             <h2 className="section-heading text-uppercase text-dark">
-              Notre Équipe Exceptionnelle
+            {t('equipe')}
             </h2>
             <h3 className="section-subheading text-muted">
-              Nous sommes une équipe de professionnels passionnés, dédiée à
-              fournir des solutions innovantes et de haute qualité pour répondre
-              aux besoins de nos clients.
+            {t('pro')}
             </h3>
           </div>
           <div className="row">
@@ -108,10 +108,7 @@ export default function About() {
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
               <p className="large text-muted">
-                Notre équipe se distingue par son expertise et son engagement
-                envers l'excellence. Chacun de ses membres apporte une
-                contribution unique, collaborant efficacement pour atteindre les
-                objectifs communs et offrir des solutions de qualité supérieure.
+              {t('expertise')}
               </p>
             </div>
           </div>
