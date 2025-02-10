@@ -717,7 +717,10 @@ img.im-banners {
   .list-mob-bg {
     right: 120px;
   }
-
+  .list-mob-i18{
+    position: absolute;
+    right: 165px;
+  }
   .dropdown {
     padding: 0px;
   }
