@@ -12,9 +12,7 @@ body {
 /* dark mode */
 body.dark-mode {
   background-color: #212529;
-  /* Couleur de fond sombre */
   color: #f8f9fa;
-  /* Couleur de texte claire */
 
 }
 
@@ -43,30 +41,16 @@ body.dark-mode .nav-link {
   align-content: center;
 }
 
-/* .bi-brightness-low {
-  font-size: 1.5rem;
-  color: #fff;
-} */
-
-/* .bi-moon-stars {
-  font-size: 1.2rem;
-  color: #333;
-} */
-
 .btn {
   background-color: var(--bs-warning);
-  /* Utilise la variable pour la couleur de fond */
   color: white;
   border: none;
-  /* Ajustez la couleur du texte si nécessaire */
 }
 
 .btn:hover {
   border-color: transparent !important;
   background-color: var(--bs-warning) !important;
 }
-
-
 
 .bg-btn,
 .bg-10bbf1,
@@ -195,11 +179,8 @@ a {
 
 .modal-fullscreen .modal-body {
   overflow-y: auto;
-  /* Permet le défilement */
   scrollbar-width: thin;
-  /* Réduit la largeur de la barre pour Firefox */
   scrollbar-color: transparent transparent;
-  /* Couleur de la barre et du fond pour Firefox */
 }
 
 .modal-content {
@@ -319,6 +300,7 @@ a {
 .list-pc-moon {
   display: flex;
 }
+
 .list-mob-bg,
 .list-mob-moon,
 .list-pc-bg,
@@ -382,7 +364,7 @@ img.im-banners {
   overflow: hidden;
 }
 
-/*  */
+/* navbar - styles */
 #mainNav .navbar-nav .nav-item {
   display: flex;
   margin-right: 1rem;
@@ -586,6 +568,7 @@ img.im-banners {
   .list-pc-moon {
     display: none;
   }
+
   .list-mob-i18,
   .list-mob-moon {
     display: flex;
@@ -717,10 +700,12 @@ img.im-banners {
   .list-mob-bg {
     right: 120px;
   }
-  .list-mob-i18{
+
+  .list-mob-i18 {
     position: absolute;
     right: 165px;
   }
+
   .dropdown {
     padding: 0px;
   }
@@ -759,6 +744,7 @@ img.im-banners {
   display: block;
   opacity: 1;
 }
+
 body:has(.overlay.show) .list-mob-i18 a,
 body:has(.overlay.show) .span-card,
 body:has(.overlay.show) .btn-dark-moon,
@@ -783,4 +769,3 @@ body:has(.overlay.show) .hamburger-menu {
   font-weight: 700;
   margin: 4px 11px;
 }
-
