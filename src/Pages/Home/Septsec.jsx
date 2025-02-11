@@ -179,10 +179,6 @@ export default function ContactForm() {
                     </small>
                   )}
                 </div>
-                <ReCAPTCHA
-                  sitekey="6Lfm4tMqAAAAAAm_gbvi4BYoRGHOtQjUeDmkZb52" // Remplacez par votre clé de site
-                  onChange={(value) => setCaptchaValue(value)}
-                />
               </div>
               <div className="col-md-6">
                 <div className="form-group">
@@ -215,7 +211,12 @@ export default function ContactForm() {
                     </small>
                   )}
                 </div>
+                
               </div>
+              <ReCAPTCHA
+                  sitekey="6Lfm4tMqAAAAAAm_gbvi4BYoRGHOtQjUeDmkZb52" // Remplacez par votre clé de site
+                  onChange={(value) => setCaptchaValue(value)}
+                />
             </div>
 
             {successMessage && (
