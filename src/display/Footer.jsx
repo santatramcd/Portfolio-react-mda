@@ -46,7 +46,7 @@ export default function Footer() {
               </a>
               <a
                 className="btn btn-dark btn-social mx-2"
-                href="#!"
+                href="https://www.linkedin.com/in/andrianjaka-santatra-michado-a119952b7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 aria-label="LinkedIn"
               >
                 <i className="bi bi-linkedin"></i>

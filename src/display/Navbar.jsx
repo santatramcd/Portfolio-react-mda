@@ -209,7 +209,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/andrianjaka-santatra-michado-a119952b7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                     <i class="bi bi-linkedin"></i>
                   </a>
                 </li>
