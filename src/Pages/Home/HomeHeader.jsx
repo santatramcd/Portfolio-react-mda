@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import banniere from "../../assets/bannière.jpg";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+
+import Left from "../../assets/eclipse-blue.webp";
+import Right from "../../assets/eclipse-red.webp";
 
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
@@ -24,19 +27,19 @@ export default function About() {
       <header className="masthead " id="page-top">
         <div className="container">
           <div className="row row-bann animated animatedFadeInUp fadeInUp">
-            <div className="col-lg-6" >
+            <div className="col-lg-6">
               <div className="masthead-subheading">
-              {t('Iam')} Santatra Michado
+                {t("Iam")} Santatra Michado
               </div>
               <div className="masthead-heading text-uppercase">
-              {t('dev')} <span className="name-sm"> Front-End</span>
+                {t("dev")} <span className="name-sm"> Front-End</span>
               </div>
               <a
                 className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"
                 href="/cv-santatra.pdf"
                 download="Santatra-Michado-CV.pdf"
               >
-                {t('down')}
+                {t("down")}
               </a>
             </div>
             <div className="col-lg-6">
@@ -47,11 +50,7 @@ export default function About() {
                     dangerouslySetInnerHTML={{ __html: rotatedText }}
                   />
                   <div className="div-banners">
-                    <img
-                      src={banniere}
-                      alt="image"
-                      className="im-banners"
-                    />
+                    <img src={banniere} alt="image" className="im-banners" />
                   </div>
                 </div>
               </div>
@@ -59,6 +58,14 @@ export default function About() {
           </div>
         </div>
       </header>
+      <div className="bg-linear">
+        <div className="blue">
+          <img src={Left} alt="image" />
+        </div>
+        <div className="red">
+          <img src={Right} alt="image" />
+        </div>
+      </div>
     </div>
   );
 }
