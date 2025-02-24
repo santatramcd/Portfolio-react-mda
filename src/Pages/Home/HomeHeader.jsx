@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import banniere from "../../assets/bannière.jpg";
 import { useTranslation } from "react-i18next";
 
-import Left from "../../assets/eclipse-blue.webp";
-import Right from "../../assets/eclipse-red.webp";
-
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
 
