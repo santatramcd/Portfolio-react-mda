@@ -194,10 +194,12 @@ export default function ContactForm() {
                   )}
                 </div>
               </div>
-              <ReCAPTCHA
-                sitekey="6Lfm4tMqAAAAAAm_gbvi4BYoRGHOtQjUeDmkZb52" // Remplacez par votre clé de site
-                onChange={(value) => setCaptchaValue(value)}
-              />
+              <div className="recaptchat">
+                <ReCAPTCHA
+                  sitekey="6Lfm4tMqAAAAAAm_gbvi4BYoRGHOtQjUeDmkZb52" // Remplacez par votre clé de site
+                  onChange={(value) => setCaptchaValue(value)}
+                />
+              </div>
             </div>
 
             {successMessage && (
