@@ -60,10 +60,10 @@ export default function About() {
       </header>
       <div className="bg-linear">
         <div className="blue">
-          <img src={Left} alt="image" />
+        <img src={Right} alt="image" />
         </div>
         <div className="red">
-          <img src={Right} alt="image" />
+          <img src={Left} alt="image" />
         </div>
       </div>
     </div>

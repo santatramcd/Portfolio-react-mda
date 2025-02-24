@@ -111,7 +111,7 @@
   }
 
   .bg-linear{
-    // opacity: 0.9;
+    opacity: 0.9;
     position: fixed;
     z-index: 0;
     top: 0;
@@ -125,19 +125,28 @@
   .bg-linear .red{
     left: -13%;
     top: 80px;
-    // background:red;
     height: 600px;
     width: 50%;
     position: absolute;
+    // background:red;
+    opacity: 0.6;
   }
   .bg-linear .blue{
     bottom: -80px;
     right: -13%;
-    // background: blue;
     height: 600px;
     width: 50%;
     position: absolute;
+    // background: blue;
+    opacity: 0.6;
   }
   .bg-linear img{
     width: 700px;
   }
+@media (max-width: 991px) {
+  .bg-linear img{
+    width: 200px;
+    height: 500px;
+  }
+
+}
