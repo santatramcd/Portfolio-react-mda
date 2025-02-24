@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import banniere from "../../assets/bannière.jpg";
 import { useTranslation } from "react-i18next";
 
+import Left from "../../assets/eclipse-blue.webp";
+import Right from "../../assets/eclipse-red.webp";
+
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
 
@@ -55,6 +58,14 @@ export default function About() {
           </div>
         </div>
       </header>
+      <div className="bg-linear">
+        <div className="blue">
+        <img src={Right} alt="image" />
+        </div>
+        <div className="red">
+          <img src={Left} alt="image" />
+        </div>
+      </div>
     </div>
   );
 }
