@@ -32,10 +32,13 @@ export default function ContactForm() {
     const errors = {};
     if (!formData.name.trim()) errors.name = "Le nom est obligatoire.";
     if (!formData.email.trim()) errors.email = "L'email est obligatoire.";
-    if (!formData.type.trim()) errors.type = "Le type de projet est obligatoire.";
+    if (!formData.type.trim())
+      errors.type = "Le type de projet est obligatoire.";
     if (!formData.budget.trim()) errors.budget = "Le budget est obligatoire.";
-    if (!formData.message.trim()) errors.message = "Le message est obligatoire.";
-    if (!captchaValue) errors.captcha = "Veuillez vérifier que vous n'êtes pas un robot !";
+    if (!formData.message.trim())
+      errors.message = "Le message est obligatoire.";
+    if (!captchaValue)
+      errors.captcha = "Veuillez vérifier que vous n'êtes pas un robot !";
     return errors;
   };
 
@@ -89,7 +92,9 @@ export default function ContactForm() {
       setCaptchaValue(null); // Réinitialiser le captcha après soumission
     } catch (error) {
       console.error("Erreur lors de l'envoi du formulaire :", error);
-      setErrorMessage("Une erreur s'est produite lors de l'envoi. Veuillez réessayer.");
+      setErrorMessage(
+        "Une erreur s'est produite lors de l'envoi. Veuillez réessayer."
+      );
       setSuccessMessage("");
     }
   };
@@ -101,7 +106,9 @@ export default function ContactForm() {
       <section className="page-section" id="contact">
         <div className="container">
           <div className="text-center">
-            <h2 className="section-heading text-uppercase">{t("demandesite")}</h2>
+            <h2 className="section-heading text-uppercase">
+              {t("demandesite")}
+            </h2>
             <h3 className="section-subheading text-muted">{t("projetweb")}</h3>
           </div>
           <form onSubmit={handleSubmit} id="contactForm">
@@ -117,7 +124,9 @@ export default function ContactForm() {
                     className="form-control"
                   />
                   {validationErrors.name && (
-                    <small className="text-danger">{validationErrors.name}</small>
+                    <small className="text-danger">
+                      {validationErrors.name}
+                    </small>
                   )}
                 </div>
 
@@ -131,7 +140,9 @@ export default function ContactForm() {
                     className="form-control"
                   />
                   {validationErrors.email && (
-                    <small className="text-danger">{validationErrors.email}</small>
+                    <small className="text-danger">
+                      {validationErrors.email}
+                    </small>
                   )}
                 </div>
 
@@ -145,7 +156,9 @@ export default function ContactForm() {
                     className="form-control"
                   />
                   {validationErrors.type && (
-                    <small className="text-danger">{validationErrors.type}</small>
+                    <small className="text-danger">
+                      {validationErrors.type}
+                    </small>
                   )}
                 </div>
               </div>
@@ -160,7 +173,9 @@ export default function ContactForm() {
                     className="form-control"
                   />
                   {validationErrors.budget && (
-                    <small className="text-danger">{validationErrors.budget}</small>
+                    <small className="text-danger">
+                      {validationErrors.budget}
+                    </small>
                   )}
                 </div>
 
@@ -173,14 +188,18 @@ export default function ContactForm() {
                     className="form-control"
                   />
                   {validationErrors.message && (
-                    <small className="text-danger">{validationErrors.message}</small>
+                    <small className="text-danger">
+                      {validationErrors.message}
+                    </small>
                   )}
                 </div>
               </div>
-              <ReCAPTCHA
+              <div className="recaptchat">
+                <ReCAPTCHA
                   sitekey="6Lfm4tMqAAAAAAm_gbvi4BYoRGHOtQjUeDmkZb52" // Remplacez par votre clé de site
                   onChange={(value) => setCaptchaValue(value)}
                 />
+              </div>
             </div>
 
             {successMessage && (
