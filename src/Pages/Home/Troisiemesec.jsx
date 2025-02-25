@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -29,7 +29,8 @@ export default function Home() {
         title: record.fields.Name || "Sans titre",
         techno: record.fields.Technology || "Sans description",
         category: record.fields.Category || "Autre", // Catégorie ajoutée
-        img: record.fields.Photos?.[0]?.url || "",
+        // img: record.fields.Photos?.[0]?.url || "",
+        Urlimg: record.fields.url || "#",
         link: record.fields.Link || "#",
       }));
 
@@ -63,7 +64,7 @@ export default function Home() {
             <div className="text-center">
               <h2 className="section-heading text-uppercase">Portfolio</h2>
               <h3 className="section-subheading text-muted">
-              {t('projetrecent')}
+                {t("projetrecent")}
               </h3>
             </div>
           </div>
@@ -147,9 +148,14 @@ export default function Home() {
                               </a>
                             </div>
                           </div>
-                          <img
+                          {/* <img
                             className="img-fluid img-portfolio"
                             src={item.img}
+                            alt={item.title}
+                          /> */}
+                          <img
+                            className="img-fluid img-portfolio"
+                            src={item.Urlimg}
                             alt={item.title}
                           />
                         </a>
@@ -196,9 +202,14 @@ export default function Home() {
               <div className="modal-body">
                 {selectedItem && (
                   <div>
-                    <img
+                    {/* <img
                       className="img-fluid"
                       src={selectedItem.img}
+                      alt={selectedItem.title}
+                    /> */}
+                    <img
+                      className="img-fluid"
+                      src={selectedItem.Urlimg}
                       alt={selectedItem.title}
                     />
                     <p className="mt-3">{selectedItem.techno}</p>

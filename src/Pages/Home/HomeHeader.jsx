@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import banniere from "../../assets/bannière.jpg";
+// import banniere from "../../assets/bannière.jpg";
 import { useTranslation } from "react-i18next";
 
 import Left from "../../assets/eclipse-blue.webp";
@@ -50,7 +50,7 @@ export default function About() {
                     dangerouslySetInnerHTML={{ __html: rotatedText }}
                   />
                   <div className="div-banners">
-                    <img src={banniere} alt="image" className="im-banners" />
+                    <img src="https://res.cloudinary.com/de03l56z6/image/upload/v1740470623/banni%C3%A8re_qnvo1r.jpg" alt="image" className="im-banners" />
                   </div>
                 </div>
               </div>
