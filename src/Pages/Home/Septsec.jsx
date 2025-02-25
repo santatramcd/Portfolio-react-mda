@@ -220,7 +220,7 @@ export default function ContactForm() {
                 type="submit"
                 className="btn btn-primary btn-xl text-uppercase"
               >
-                Envoyer
+                {t("send")}
               </button>
             </div>
           </form>
