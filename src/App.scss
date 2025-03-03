@@ -150,6 +150,38 @@ input {
   position: relative;
   z-index: 10;
 }
+// Cookies
+.banner-cookies {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2000;
+}
+.acceptButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.refuseButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
 @media (max-width: 400px) {
   .bg-linear .red,
   .bg-linear .blue {
@@ -160,5 +192,14 @@ input {
     width: 500px;
     height: 800px;
     margin-left: -80px;
+  }
+  .banner-cookies {
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin: 0 10px;
+  }
+  .refuseButton {
+    margin-left: 10px;
   }
 }

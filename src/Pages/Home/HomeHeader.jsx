@@ -32,7 +32,7 @@ export default function About() {
                 {t("Iam")} Santatra Michado
               </div>
               <div className="masthead-heading text-uppercase">
-                {t("dev")} <span className="name-sm"> Front-End</span>
+                {t("dev")} <span className="name-sm">Front-End</span>
               </div>
               <a
                 className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"

@@ -8,6 +8,7 @@ import Cinqsec from "./Home/cinqsec";
 import Sixsec from "./Home/Sixsec";
 import Skills from "./Home/skills";
 import Septsec from "./Home/Septsec";
+import CookiesConsent from "./Home/CookieConsent";
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
           <Skills/>
           <Sixsec />
           <Septsec />
+          <CookiesConsent/>
         </div>
       </main>
 
