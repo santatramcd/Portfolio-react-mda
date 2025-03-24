@@ -17,16 +17,12 @@ export default function Home() {
           <Deuxiemesect />
           <Troisiemesec />
           <Quatriemesec />
-          <Cinqsec />
+          {/* <Cinqsec /> */}
           <Skills />
           <Sixsec />
           <Septsec />
         </div>
       </main>
-
-      {/* <div id="preloader">
-    <div classNameName="line"></div>
-  </div> */}
     </>
   );
 }

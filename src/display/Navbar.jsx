@@ -182,7 +182,7 @@ export default function Navbar() {
                   icon: "bi bi-briefcase",
                 },
                 { href: "#about", label: "About", icon: "bi bi-person" },
-                { href: "#team", label: "Team", icon: "bi bi-people" },
+                // { href: "#team", label: "Team", icon: "bi bi-people" },
                 {
                   href: "#Skills",
                   label: "Skills",
