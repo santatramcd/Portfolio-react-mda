@@ -8,12 +8,14 @@ import Cinqsec from "./Home/cinqsec";
 import Sixsec from "./Home/Sixsec";
 import Skills from "./Home/skills";
 import Septsec from "./Home/Septsec";
+// import Gsap from "./Home/gsap"
 export default function Home() {
   return (
     <>
       <main>
         <div>
           <Homehead />
+          {/* <Gsap/> */}
           <Deuxiemesect />
           <Troisiemesec />
           <Quatriemesec />

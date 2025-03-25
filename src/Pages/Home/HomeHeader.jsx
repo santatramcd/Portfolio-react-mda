@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import Left from "../../assets/eclipse-blue.webp";
 import Right from "../../assets/eclipse-red.webp";
+import Gsap from "./gsap"
 
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
@@ -27,20 +28,21 @@ export default function About() {
       <header className="masthead " id="page-top">
         <div className="container">
           <div className="row row-bann animated animatedFadeInUp fadeInUp">
-            <div className="col-lg-6">
-              <div className="masthead-subheading">
+            <div className="col-lg-6 div-col-gsap">
+              {/* <div className="masthead-subheading">
                 {t("Iam")} Santatra Michado
               </div>
               <div className="masthead-heading text-uppercase">
                 {t("dev")} <span className="name-sm">Front-End</span>
-              </div>
-              <a
+              </div> */}
+              <Gsap/>
+              {/* <a
                 className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"
                 href="/cv-santatra.pdf"
                 download="Santatra-Michado-CV.pdf"
               >
                 {t("down")}
-              </a>
+              </a> */}
             </div>
             <div className="col-lg-6">
               <div className="div-cont-bann">

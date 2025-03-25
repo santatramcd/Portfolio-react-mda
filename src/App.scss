@@ -171,3 +171,65 @@ input {
     margin-left: 10px;
   }
 }
+
+//
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap");
+
+:root {
+  --secondary-font: "Bebas Neue", sans-serif;
+}
+
+/* hero section style */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  // background: #4e54c8;
+  left: 0 !important;
+  right: 0!important;
+}
+
+.title {
+  font-size: 12vw;
+  font-weight: 400;
+  color: var(--default-color);
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: normal;
+  line-height: 0.9;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.post {
+  font-size: 2rem;
+  color: var(--default-color);
+  text-align: center;
+  margin-top: 1rem;
+  font-family: var(--secondary-font);
+}
+.firstname,
+.lastname {
+  display: flex;
+}
+.div-col-gsap {
+  text-align: center;
+  // background-color: red;
+  position: relative;
+  padding: 0!important;
+}
+@media (max-width: 990px) {
+  .hero-section {
+    // background: #4e54c8;
+    margin-top: 5rem!important;
+  }
+  .title {
+    font-size: 20vw;
+  }
+}
+@media (max-width: 400px) {
+  .hero-section {
+    margin-top: 0!important;
+  }
+}
