@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
-const { t } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const heroTl = gsap.timeline({
@@ -36,6 +36,7 @@ const { t } = useTranslation();
     gsap.to(".hero-section", {
       y: -1200,
       duration: 4,
+      opacity: 0,
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".hero-section",
@@ -79,7 +80,9 @@ const { t } = useTranslation();
               </div>
             </div>
           </div>
-          <p className="post">web <span className="name-sm">developer</span> </p>
+          <p className="post">
+            web <span className="name-sm">developer</span>{" "}
+          </p>
           <a
             className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"
             href="/cv-santatra.pdf"
