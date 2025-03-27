@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Profil from "../assets/gallery/profile-img.jpg";
 export default function About() {
   return (
     <div className="container py-3">

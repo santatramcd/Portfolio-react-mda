@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import Left from "../../assets/eclipse-blue.webp";
 import Right from "../../assets/eclipse-red.webp";
-import Gsap from "./gsap"
+import Gsap from "./gsap";
 
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");

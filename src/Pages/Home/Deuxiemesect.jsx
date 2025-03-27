@@ -21,7 +21,7 @@ export default function About() {
               <span className="fa-stack fa-4x">
                 <span className="iconne-span-cercle">
                   {/* <i className="bi bi-cart-check-fill fa-stack-1x fa-inverse"></i> */}
-                <img width="66" height="66" src="https://img.icons8.com/external-others-bomsymbols-/91/external-code-flat-02-digital-design-others-bomsymbols-.png" className="icn-e-com" alt="external-code-flat-02-digital-design-others-bomsymbols-"/>
+                <img width="66" height="66" src="https://img.icons8.com/external-others-bomsymbols-/91/external-code-flat-02-digital-design-others-bomsymbols-.png" className="icn-e-com" id="code" alt="external-code-flat-02-digital-design-others-bomsymbols-"/>
                 </span>
               </span>
               <h4 className="mt-3">{t('opti')}</h4>
