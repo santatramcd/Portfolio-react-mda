@@ -29,14 +29,16 @@ export default function About() {
                                 <SkillBar name="CSS" percentage={85} />
                                 <SkillBar name="JavaScript" percentage={80} />
                                 <SkillBar name="Bootstrap 5" percentage={85} />
+                                <SkillBar name="Github/Gitlab/Git" percentage={75} />
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="technical-bars">
                                 <SkillBar name="Vue.js" percentage={90} />
-                                <SkillBar name="WordPress" percentage={80} />
+                                <SkillBar name="WordPress/Elementor" percentage={80} />
                                 <SkillBar name="PHP" percentage={75} />
                                 <SkillBar name="React.js" percentage={85} />
+                                <SkillBar name="Angular" percentage={85} />
                             </div>
                         </div>
                     </div>
