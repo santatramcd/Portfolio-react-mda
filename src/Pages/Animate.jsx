@@ -17,7 +17,7 @@ export default function Animate() {
         {
           duration: 1.5,
           height: 0, 
-          stagger:{ amount: 1 }, 
+          stagger:{ amount: 0.5 }, 
           ease: "power4.out",
           onComplete: () => {
             gsap.to(".overlays", {
