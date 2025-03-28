@@ -4,20 +4,20 @@ import gsap from "gsap"; // Assurez-vous d'importer gsap
 export default function Animate() {
   useEffect(() => {
     function startLoader() {
-      let bars = document.querySelectorAll(".bar");
+      let bars = document.querySelectorAll(".bars");
 
       if (bars.length === 0) {
-        console.error("Aucun élément .bar trouvé !");
+        console.error("Aucun élément .bars trouvé !");
         return;
       }
 
       gsap.fromTo(
-        ".bar",
+        ".bars",
         { height: "100vh" }, 
         {
           duration: 1.5,
           height: 0, 
-          stagger:{ amount: 2 }, 
+          stagger:{ amount: 1 }, 
           ease: "power4.out",
           onComplete: () => {
             gsap.to(".overlays", {
@@ -37,12 +37,12 @@ export default function Animate() {
 
   return (
     <div className="overlays">
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
+      <div className="bars"></div>
+      <div className="bars"></div>
+      <div className="bars"></div>
+      <div className="bars"></div>
+      <div className="bars"></div>
+      <div className="bars"></div>
     </div>
   );
 }
