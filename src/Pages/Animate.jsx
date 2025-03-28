@@ -13,17 +13,26 @@ export default function Animate() {
 
       gsap.fromTo(
         ".bar",
-        { height: "100vh" },
+        { height: "100vh" }, 
         {
           duration: 1.5,
-          height: 0,
-          stagger: { amount: 2 },
+          height: 0, 
+          stagger:{ amount: 2 }, 
           ease: "power4.out",
+          onComplete: () => {
+            gsap.to(".overlays", {
+              opacity: 0,
+              duration: 1, 
+              onComplete: () => {
+                document.querySelector(".overlays").style.display = "none";
+              },
+            });
+          },
         }
       );
     }
 
-    setTimeout(startLoader);
+    setTimeout(startLoader); 
   }, []);
 
   return (

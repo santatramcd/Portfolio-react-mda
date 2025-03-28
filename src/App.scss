@@ -187,7 +187,7 @@ input {
   height: 400px;
   // background: #4e54c8;
   left: 0 !important;
-  right: 0!important;
+  right: 0 !important;
 }
 
 .title {
@@ -217,7 +217,7 @@ input {
   text-align: center;
   // background-color: red;
   position: relative;
-  padding: 0!important;
+  padding: 0 !important;
 }
 .overlays {
   position: fixed;
@@ -226,20 +226,19 @@ input {
   width: 100vw;
   height: 100vh;
   display: flex;
-  z-index: 99999; /* Ajuste le z-index si nécessaire */
+  z-index: 99999;
 }
 
 .bar {
   width: calc(100vw / 6);
   height: 100vh;
-  background: #1a1a1a;
+  background: #212529;
   position: relative;
-  z-index: 99999; /* Assurez-vous que les barres sont visibles par-dessus d'autres éléments */
+  z-index: 99999;
 }
 @media (max-width: 990px) {
   .hero-section {
-    // background: #4e54c8; 
-    margin-top: 5rem!important;
+    margin-top: 5rem !important;
   }
   .title {
     font-size: 20vw;
@@ -247,7 +246,6 @@ input {
 }
 @media (max-width: 500px) {
   .hero-section {
-    margin-top: 0!important;
+    margin-top: 0 !important;
   }
 }
-
