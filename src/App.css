@@ -525,7 +525,7 @@ img.im-banners {
   line-height: 2.1;
   border-radius: 2px;
   outline: inherit;
-  right: 60px;
+  right: 120px;
   bottom: 30px;
   background-color: var(--bs-warning);
   opacity: 0;
@@ -681,7 +681,7 @@ img.im-banners {
   }
 
   .div-fixed {
-    right: 30px;
+    right: 100px;
   }
 }
 
