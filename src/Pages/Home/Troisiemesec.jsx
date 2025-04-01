@@ -126,7 +126,7 @@ export default function Home() {
               {!loading && !error && (
                 <div className="row">
                   {filteredData.map((item) => (
-                    <div key={item.id} className="col-lg-4 col-sm-6 mb-4">
+                    <div key={item.id} className="col-lg-4 col-sm-6 mb-4 zoom-in">
                       <div className="portfolio-item">
                         <a className="portfolio-link" href="#">
                           <div className="portfolio-hover">
