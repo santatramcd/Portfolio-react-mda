@@ -25,19 +25,19 @@ export default function About() {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="technical-bars">
-                                <SkillBar name="HTML" percentage={90} />
+                                <SkillBar name="HTML" percentage={92} />
                                 <SkillBar name="CSS" percentage={85} />
-                                <SkillBar name="JavaScript" percentage={80} />
+                                <SkillBar name="JavaScript" percentage={82} />
                                 <SkillBar name="Bootstrap 5" percentage={85} />
-                                <SkillBar name="Github/Gitlab/Git" percentage={75} />
+                                <SkillBar name="Github/Gitlab/Git" percentage={78} />
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="technical-bars">
                                 <SkillBar name="Vue.js" percentage={90} />
                                 <SkillBar name="WordPress/Elementor" percentage={80} />
-                                <SkillBar name="PHP" percentage={75} />
-                                <SkillBar name="React.js" percentage={85} />
+                                <SkillBar name="PHP/Laravel" percentage={73} />
+                                <SkillBar name="React.js" percentage={86} />
                                 <SkillBar name="Angular" percentage={85} />
                             </div>
                         </div>
