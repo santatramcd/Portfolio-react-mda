@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-// import banniere from "../../assets/bannière.jpg";
 import { useTranslation } from "react-i18next";
+// import { tsParticles } from "tsparticles-engine";
+// import { loadFull } from "tsparticles";
 
 import Left from "../../assets/eclipse-blue.webp";
 import Right from "../../assets/eclipse-red.webp";
@@ -8,6 +9,7 @@ import Gsap from "./gsap";
 
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const text = "Integrateur web❤️Creative UX / UI Designer";
@@ -18,31 +20,52 @@ export default function About() {
           `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
       )
       .join("");
-
     setRotatedText(transformedText);
   }, []);
-  const { t } = useTranslation();
+
+  useEffect(() => {
+    const initParticles = async () => {
+      await loadFull(tsParticles);
+      tsParticles.load("tsparticles", {
+        fullScreen: { enable: false },
+        particles: {
+          number: { value: 40 },
+          color: { value: "#0041cc" },
+          shape: { type: "circle" },
+          opacity: { value: 0.3 },
+          size: { value: 3 },
+          move: {
+            enable: true,
+            speed: 1,
+            outModes: { default: "out" },
+          },
+          links: {
+            enable: true,
+            distance: 150,
+            color: "#0041cc",
+            opacity: 0.2,
+            width: 1,
+          },
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: "repulse" },
+          },
+        },
+      });
+    };
+
+    initParticles();
+  }, []);
 
   return (
     <div>
-      <header className="masthead " id="page-top">
+      <header className="masthead" id="page-top">
+        <div id="tsparticles"></div>
         <div className="container">
           <div className="row row-bann animated animatedFadeInUp fadeInUp">
-            <div className="col-lg-6 div-col-gsap">
-              {/* <div className="masthead-subheading">
-                {t("Iam")} Santatra Michado
-              </div>
-              <div className="masthead-heading text-uppercase">
-                {t("dev")} <span className="name-sm">Front-End</span>
-              </div> */}
-              <Gsap/>
-              {/* <a
-                className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"
-                href="/cv-santatra.pdf"
-                download="Santatra-Michado-CV.pdf"
-              >
-                {t("down")}
-              </a> */}
+            <div className="col-lg-6 div-col-gsap">  
+              <Gsap />
             </div>
             <div className="col-lg-6">
               <div className="div-cont-bann">
@@ -52,7 +75,11 @@ export default function About() {
                     dangerouslySetInnerHTML={{ __html: rotatedText }}
                   />
                   <div className="div-banners">
-                    <img src="https://res.cloudinary.com/de03l56z6/image/upload/v1740470623/banni%C3%A8re_qnvo1r.jpg" alt="image" className="im-banners" />
+                    <img
+                      src="https://res.cloudinary.com/de03l56z6/image/upload/v1740470623/banni%C3%A8re_qnvo1r.jpg"
+                      alt="image"
+                      className="im-banners"
+                    />
                   </div>
                 </div>
               </div>
@@ -62,7 +89,7 @@ export default function About() {
       </header>
       <div className="bg-linear">
         <div className="blue">
-        <img src={Right} alt="image" />
+          <img src={Right} alt="image" />
         </div>
         <div className="red">
           <img src={Left} alt="image" />

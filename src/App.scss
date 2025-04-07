@@ -215,10 +215,11 @@ input {
 }
 .div-col-gsap {
   text-align: center;
-  // background-color: red;
   position: relative;
   padding: 0 !important;
 }
+
+
 .overlays {
   position: fixed;
   top: 0; 
@@ -235,6 +236,12 @@ input {
   background: #212529;
   position: relative;
   z-index: 99999;
+}
+#tsparticles{
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
 }
 
 @media (max-width: 990px) {
@@ -268,3 +275,4 @@ input {
 .zoom-in {
   animation: zoomIn 0.5s ease-in-out;
 }
+
