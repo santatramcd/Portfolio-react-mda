@@ -238,10 +238,10 @@ input {
   z-index: 99999;
 }
 #tsparticles{
-  position: absolute;
-  top: 0px;
   height: 100vh;
   width: 100%;
+  position: absolute;
+  top: 0px;
 }
 
 @media (max-width: 990px) {
@@ -256,6 +256,9 @@ input {
   .hero-section {
     margin-top: 0 !important;
   }
+  #tsparticles {
+    height: 145vh;
+}
 }
 .chatbox{
   position: relative;
