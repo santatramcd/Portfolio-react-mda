@@ -24,7 +24,7 @@ export default function About() {
             <div className="col-lg-6">
               <div className="technical-bars">
                 <SkillBar name="HTML" percentage={92} />
-                <SkillBar name="CSS" percentage={85} />
+                <SkillBar name="CSS/SCSS" percentage={85} />
                 <SkillBar name="JavaScript" percentage={82} />
                 <SkillBar name="Bootstrap 5" percentage={85} />
                 <SkillBar name="Github/Gitlab/Git" percentage={78} />
