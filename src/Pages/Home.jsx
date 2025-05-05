@@ -10,7 +10,7 @@ import Skills from "./Home/skills";
 import Septsec from "./Home/Septsec";
 import Chatbox from "./Home/chatbox";
 // import Gsap from "./Home/gsap"
-import Test from "./Home/test"
+import Code from "./Home/code"
 export default function Home() {
   return (
     <>
@@ -23,7 +23,7 @@ export default function Home() {
           <Quatriemesec />
           {/* <Cinqsec /> */}
           <Skills />
-          <Test/>
+          <Code/>
           <Sixsec />
           <Septsec />
           <Chatbox/>

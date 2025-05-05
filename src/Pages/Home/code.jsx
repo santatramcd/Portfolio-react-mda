@@ -1,6 +1,6 @@
 import React from "react";
 
-function Test() {
+function Code() {
   return (
     <div className="container">
       <div className="code__block">
@@ -50,4 +50,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Code;
