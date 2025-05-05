@@ -29,7 +29,7 @@ function Code() {
             <span style={{ color: "green" }}>"+261 32 46 658 49"</span>,{"\n"}
             {"  "}
             <span style={{ color: "#d14" }}>Email</span>:{" "}
-            <span style={{ color: "green" }}>"Andrianjakasantatra22@gmail.com"</span>,{"\n"}
+            <span style={{ color: "green" }}>"Info@santatra-michado.com"</span>,{"\n"}
             {"  "}
             <span style={{ color: "#702dff" }}>hobby</span>: () =&gt; {"{\n"}
             {"    "}
