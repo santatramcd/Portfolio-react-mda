@@ -4,13 +4,13 @@ import Homehead from "./Home/HomeHeader";
 import Deuxiemesect from "./Home/Deuxiemesect";
 import Troisiemesec from "./Home/Troisiemesec";
 import Quatriemesec from "./Home/quatriemesec";
-import Cinqsec from "./Home/cinqsec";
+// import Cinqsec from "./Home/cinqsec";
 import Sixsec from "./Home/Sixsec";
 import Skills from "./Home/skills";
 import Septsec from "./Home/Septsec";
 import Chatbox from "./Home/chatbox";
-// import Gsap from "./Home/gsap"
-import Code from "./Home/code"
+// import Gsap from "./Home/gsap";
+import Code from "./Home/code";
 export default function Home() {
   return (
     <>
@@ -27,9 +27,6 @@ export default function Home() {
           <Sixsec />
           <Septsec />
           <Chatbox/>
-        </div>
-        <div>
-          
         </div>
       </main>
     </>

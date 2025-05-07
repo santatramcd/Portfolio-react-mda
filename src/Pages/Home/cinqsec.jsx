@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import team1 from "../../assets/team/1.jpg";
 import team2 from "../../assets/team/2.jpg";
 import team3 from "../../assets/team/3.jpg";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 export default function About() {
   const { t } = useTranslation();
@@ -13,11 +13,9 @@ export default function About() {
         <div className="container">
           <div className="text-center">
             <h2 className="section-heading text-uppercase text-dark">
-            {t('equipe')}
+              {t("equipe")}
             </h2>
-            <h3 className="section-subheading text-muted">
-            {t('pro')}
-            </h3>
+            <h3 className="section-subheading text-muted">{t("pro")}</h3>
           </div>
           <div className="row">
             <div className="col-lg-4">
@@ -107,9 +105,7 @@ export default function About() {
           </div>
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
-              <p className="large text-muted">
-              {t('expertise')}
-              </p>
+              <p className="large text-muted">{t("expertise")}</p>
             </div>
           </div>
         </div>
