@@ -17,7 +17,7 @@ export default function About() {
       <section className="page-section" id="Skills" data-aos="fade-up">
         <div className="container">
           <div className="text-center">
-            <h2 className="section-heading text-uppercase">Skill</h2>
+            <h2 className="section-heading text-uppercase">Skills</h2>
             <h3 className="section-subheading text-muted">{t("skills")}</h3>
           </div>
           <div className="row">
