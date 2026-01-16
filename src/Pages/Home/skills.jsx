@@ -23,8 +23,8 @@ export default function About() {
           <div className="row">
             <div className="col-lg-6">
               <div className="technical-bars">
-                <SkillBar name="HTML" percentage={92} />
-                <SkillBar name="CSS/SCSS" percentage={85} />
+                <SkillBar name="HTML" percentage={95} />
+                <SkillBar name="CSS/SCSS" percentage={90} />
                 <SkillBar name="JavaScript" percentage={82} />
                 <SkillBar name="Bootstrap 5" percentage={85} />
                 <SkillBar name="Github/Gitlab/Git" percentage={78} />
@@ -36,7 +36,7 @@ export default function About() {
                 <SkillBar name="React.js" percentage={86} />
                 <SkillBar name="Angular" percentage={85} />
                 <SkillBar name="PHP/Laravel" percentage={73} />
-                <SkillBar name="WordPress/Elementor" percentage={80} />
+                <SkillBar name="WordPress/Elementor" percentage={90} />
               </div>
             </div>
           </div>
