@@ -76,7 +76,7 @@ export default function About() {
                   />
                   <div className="div-banners">
                     <img
-                      src="https://res.cloudinary.com/de03l56z6/image/upload/v1740470623/banni%C3%A8re_qnvo1r.jpg"
+                      src="https://res.cloudinary.com/de03l56z6/image/upload/v1768558614/WhatsApp_Image_2026-01-16_at_1.15.23_PM_dfaq0k.jpg"
                       alt="image"
                       className="im-banners"
                     />
