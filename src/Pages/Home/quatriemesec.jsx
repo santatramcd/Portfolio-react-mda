@@ -37,12 +37,12 @@ export default function About() {
               </div>
               <div className="timeline-panel" data-aos="fade-right">
                 <div className="timeline-heading">
-                  <h4>2023 - à présent</h4>
-                  <h4 className="subheading">Maki Services Sarlu</h4>
+                  <h4>Décembre 2025 - à présent</h4>
+                  <h4 className="subheading">Bex Digital</h4>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                  {t('passionné')}
+                  {t('devfront')}
                   </p>
                 </div>
               </div>
@@ -57,12 +57,12 @@ export default function About() {
               </div>
               <div className="timeline-panel" data-aos="fade-left">
                 <div className="timeline-heading">
-                  <h4>May 2024</h4>
-                  <h4 className="subheading">Mada Digital agency</h4>
+                  <h4>Décembre 2023 - Novembre 2025</h4>
+                  <h4 className="subheading">Maki Services Sarlu</h4>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                  {t('devfront')}
+                  {t('passionné')}
                   </p>
                 </div>
               </div>
