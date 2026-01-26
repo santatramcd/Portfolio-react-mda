@@ -9,11 +9,17 @@ import logos1 from '../../assets/logos/createak-logo.png';
 import logos2 from '../../assets/logos/mda.png';
 import logos3 from '../../assets/logos/rr.webp';
 import logos4 from '../../assets/logos/logo.png';
+
+import { useTranslation } from "react-i18next";
+
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <div>
         <div className="py-5">
             <div className="container">
+                <h2 className="section-heading text-uppercase text-center">{t("partenaire")} :</h2>
                 <div className="row align-items-center">
                     <div className="col-md-2 col-sm-6 my-3 card-logos">
                         <a href="https://createak.mu/"><img className="img-fluid img-brand d-block mx-auto" src={logos1} alt="..." aria-label="createak Logo" /></a>
