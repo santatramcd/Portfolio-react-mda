@@ -359,7 +359,8 @@ img.im-banners {
 .div-cont-bann {
   display: flex;
   align-content: center;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: flex-end;
   flex-wrap: wrap;
   overflow: hidden;
 }
