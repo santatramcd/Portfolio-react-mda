@@ -5,7 +5,8 @@ import { useTranslation } from "react-i18next";
 
 import Left from "../../assets/eclipse-blue.webp";
 import Right from "../../assets/eclipse-red.webp";
-import Gsap from "./gsap";
+// import Gsap from "./gsap";
+import Home from "./news-an";
 
 export default function About() {
   const [rotatedText, setRotatedText] = useState("");
@@ -65,7 +66,7 @@ export default function About() {
         <div className="container">
           <div className="row row-bann animated animatedFadeInUp fadeInUp">
             <div className="col-lg-6 div-col-gsap">  
-              <Gsap />
+              <Home />
             </div>
             <div className="col-lg-6">
               <div className="div-cont-bann">
