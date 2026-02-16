@@ -8,7 +8,7 @@ export default function About() {
 
   return (
     <div>
-      <section className="page-section" id="services" data-aos="fade-up">
+      <section className="page-section bac-section" id="services" data-aos="fade-up">
         <div className="container">
           <div className="text-center">
             <h2 className="section-heading text-uppercase">{t('service')}</h2>

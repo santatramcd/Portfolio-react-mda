@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <div>
-      <section className="page-section" id="Skills" data-aos="fade-up">
+      <section className="page-section bac-section" id="Skills" data-aos="fade-up">
         <div className="container">
           <div className="text-center">
             <h2 className="section-heading text-uppercase">Skills</h2>

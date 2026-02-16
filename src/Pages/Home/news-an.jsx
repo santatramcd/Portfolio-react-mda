@@ -51,18 +51,16 @@ const HeroSection = () => {
         <main id="site-main">
             <section className="hero-section">
                 <div className="container">
-                    <h2 className="greeting">Bonjour, je suis</h2>
+                    <h2 className="greeting">{t("Iam")}</h2>
                     <h1 className="name">Santatra Michado</h1>
                     <div className="role-container">
                         <span className="role">{displayedRole}</span>
                     </div>
                     <p className="description">
-                        Passionné par la création d'expériences web modernes et intuitives.
-                        Je transforme vos idées en sites web performants et élégants avec une
-                        attention particulière aux détails et à l'expérience utilisateur.
+                        {t("dev")}
                     </p>
                     <a
-                        className="btn btn-primary btn-xl text-uppercase animated animatedFadeInUp fadeInUp"
+                        className="btn btn-primary btn-xl btn-cv-down text-uppercase animated animatedFadeInUp fadeInUp"
                         href="/cv-santatra.pdf"
                         download="Santatra-Michado-CV.pdf"
                     >

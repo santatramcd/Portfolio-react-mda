@@ -219,10 +219,7 @@ input {
   // background: linear-gradient(135deg, #ffffff 0%, var(--bs-warning) 100%);
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
-   background: linear-gradient(to left, var(--bs-warning) 0%, #c6019a 51%, var(--bs-warning) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  
 }
 
 .role-container {
@@ -238,12 +235,21 @@ input {
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
   // background-clip: text;
-}
+  //  background: linear-gradient(to left, var(--bs-warning) 0%, #c6019a 51%, var(--bs-warning) 100%);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // background-clip: text;
+  color: var(--bs-warning);
 
+}
+.btn-cv-down{
+   background: linear-gradient(to left, var(--bs-warning) 0%, #c6019a 51%, var(--bs-warning) 100%);
+}
 .role::after {
   content: '|';
   animation: blink 0.7s infinite;
   margin-left: 5px;
+  color: var(--bs-warning);
 }
 
 @keyframes blink {
@@ -346,18 +352,40 @@ input {
 //   padding: 0 !important;
 // }
 
+// .overlays {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   display: flex;
+//   z-index: 99999;
+// }
+
+.bac-section::before{
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(58, 123, 213, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(58, 123, 213, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+}
+/* OVERLAY GLOBAL */
 .overlays {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   display: flex;
-  z-index: 99999;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background: #fff;
+  overflow: hidden;
 }
-
 .bars {
-  width: calc(100vw / 6);
+  width: calc(100vw / 4);
   height: 100vh;
   background: #212529;
   position: relative;
@@ -367,7 +395,7 @@ input {
 #tsparticles {
   height: 100vh;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0px;
 }
 
