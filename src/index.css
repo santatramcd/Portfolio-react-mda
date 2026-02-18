@@ -2256,6 +2256,10 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+  .col-im-ann {
+    justify-content: center !important;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -12625,6 +12629,7 @@ p {
 .page-section {
   padding: 6rem 0;
 }
+
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -12728,7 +12733,7 @@ p {
     padding-bottom: 1rem;
     background-color: #212529;
   }
- 
+
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
@@ -13200,6 +13205,58 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.tsb-logo{
-  width: 70px!important;
+.tsb-logo {
+  width: 70px !important;
 }
+
+/*  */
+/* Couleur jaune de ton badge */
+
+.badge-hm {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--bs-warning);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+  color: var(--bs-warning);
+}
+
+.badgeDot-hm {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  background: var(--bs-warning);
+}
+
+/* Animation pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.col-im-ann {
+  /* background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+

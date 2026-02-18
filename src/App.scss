@@ -228,7 +228,7 @@ input {
 }
 
 .role {
-  font-size: 2rem;
+  font-size: 18px;
   font-weight: 600;
   // color: #3a7bd5;
   // background: linear-gradient(135deg, #ffffff 0%, var(--bs-warning) 100%);
@@ -239,11 +239,15 @@ input {
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
   // background-clip: text;
-  color: var(--bs-warning);
+  // color: var(--bs-warning);
 
 }
 .btn-cv-down{
-   background: linear-gradient(to left, var(--bs-warning) 0%, #c6019a 51%, var(--bs-warning) 100%);
+  //  background: linear-gradient(to left, var(--bs-warning) 0%, #c6019a 51%, var(--bs-warning) 100%);
+   background: var(--bs-warning);
+   border-radius: 50px;
+   color: #212529!important;
+   text-transform: capitalize!important;
 }
 .role::after {
   content: '|';

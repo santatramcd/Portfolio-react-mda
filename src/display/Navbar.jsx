@@ -116,15 +116,15 @@ export default function Navbar() {
             <button className="btn-dark-moon" onClick={toggleDarkMode}>
               {isDarkMode ? (
                 <img
-                  width="40"
-                  height="40"
+                  width="35"
+                  height="35"
                   src={Sun}
                   alt="sun-with-face"
                 />
               ) : (
                 <img
-                  width="32"
-                  height="32"
+                  width="28"
+                  height="28"
                   src={Moon}
                   alt="external-moon-bedroom-nawicon-outline-color-nawicon"
                 />
@@ -218,15 +218,15 @@ export default function Navbar() {
                 <button className="btn-dark-moon" onClick={toggleDarkMode}>
                   {isDarkMode ? (
                     <img
-                      width="40"
-                      height="40"
+                      width="35"
+                      height="35"
                       src={Sun}
                       alt="sun-with-face"
                     />
                   ) : (
                     <img
-                      width="32"
-                      height="32"
+                      width="28"
+                      height="28"
                       src={Moon}
                       alt="external-moon-bedroom-nawicon-outline-color-nawicon"
                     />

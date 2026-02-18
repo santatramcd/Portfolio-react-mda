@@ -68,7 +68,7 @@ export default function About() {
             <div className="col-lg-6 div-col-gsap">  
               <Home />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-im-ann">
               <div className="div-cont-bann">
                 <div className="circle">
                   <div
