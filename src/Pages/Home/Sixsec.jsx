@@ -17,7 +17,7 @@ export default function About() {
 
     return (
         <div className="py-5">
-            <h2 className="section-heading text-uppercase text-center">{t("partenaire")} :</h2>
+            <h2 className="section-heading text-uppercase text-center">{t("partenaire")}</h2>
             <div class="marquee-wrap mt-5">
                 <div class="marquee">
                     <span class="marquee-item"><a href="https://ova-renov.fr/"><img className="img-fluid img-brand d-block mx-auto" src="https://ova-renov.fr/wp-content/uploads/2025/11/Logo1-Transparent-blanc@3x-768x423.png" alt="..." aria-label="ova Logo" /></a></span>
