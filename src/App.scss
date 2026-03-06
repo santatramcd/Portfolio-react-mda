@@ -219,7 +219,7 @@ input {
   // background: linear-gradient(135deg, #ffffff 0%, var(--bs-warning) 100%);
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
-  
+
 }
 
 .role-container {
@@ -242,13 +242,15 @@ input {
   // color: var(--bs-warning);
 
 }
-.btn-cv-down{
+
+.btn-cv-down {
   //  background: linear-gradient(to left, var(--bs-warning) 0%, #c6019a 51%, var(--bs-warning) 100%);
-   background: var(--bs-warning);
-   border-radius: 50px;
-   color: #212529!important;
-   text-transform: capitalize!important;
+  background: var(--bs-warning);
+  border-radius: 50px;
+  color: #212529 !important;
+  text-transform: capitalize !important;
 }
+
 .role::after {
   content: '|';
   animation: blink 0.7s infinite;
@@ -366,17 +368,18 @@ input {
 //   z-index: 99999;
 // }
 
-.bac-section::before{
+.bac-section::before {
   content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(58, 123, 213, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(58, 123, 213, 0.05) 1px, transparent 1px);
-    background-size: 50px 50px;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(58, 123, 213, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(58, 123, 213, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
 }
+
 /* OVERLAY GLOBAL */
 .overlays {
   position: fixed;
@@ -388,6 +391,7 @@ input {
   background: #fff;
   overflow: hidden;
 }
+
 .bars {
   width: calc(100vw / 4);
   height: 100vh;
@@ -500,4 +504,44 @@ input {
   max-height: 0.7rem;
   border-radius: 5px;
   background: green;
+}
+
+/* MARQUEE */
+.marquee-wrap {
+  overflow: hidden;
+  padding: 32px 0;
+  // background: rgba(200, 169, 81, 0.02);
+  background-color: #d4eaf0;
+}
+
+.marquee {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.marquee-item {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(200, 169, 81, 0.4);
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+.marquee-dot {
+  font-size: 7px;
+  opacity: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
